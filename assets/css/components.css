@@ -1,17 +1,4 @@
-/* src/assets/css/components.css */
-/* Ou src/assets/scss/_components.scss se estiver usando Sass */
-
-/* Variáveis (se você estiver usando CSS puro, pode definir aqui ou em main.css) */
-/* Se estiver usando Sass, estas viriam de _variables.scss */
-:root {
-    --color-obsidian: #1A1A1A; /* Exemplo de cor escura */
-    --color-sand: #F5F5DC;     /* Exemplo de cor clara */
-    --font-family-primary: 'Griff', sans-serif; /* Substitua pelo nome da sua fonte principal */
-    --font-weight-semibold: 600; /* Ajuste conforme o peso real da sua fonte */
-    --font-weight-light: 300;    /* Ajuste conforme o peso real da sua fonte */
-    --spacing-md: 1.5rem; /* Exemplo de espaçamento */
-    --spacing-lg: 2rem;   /* Exemplo de espaçamento */
-}
+@import url('variable.css');
 
 /* Container para centralizar o conteúdo */
 .container {
