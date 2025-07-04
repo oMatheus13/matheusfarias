@@ -1,0 +1,12 @@
+Contato — Página de Contato
+Texto de abertura:
+“Vamos conversar. Se quiser falar comigo, enviar uma mensagem, compartilhar algo ou simplesmente se conectar, preenche o formulário abaixo ou chama direto no Instagram ou WhatsApp.”
+
+CTA Simples:
+“Preencher formulário”
+
+“Chamar no WhatsApp”
+
+“Me encontrar no Instagram”
+
+Nota: Você pode modificar o texto adicionar, você tem total liberdade pra deixar o site mais legal

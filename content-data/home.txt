@@ -1,0 +1,18 @@
+Home — Página Inicial
+Headline principal:
+“Matheus Farias — Clareza. Presença. Movimento.”
+(Ou opção alternativa se quiser mais direta:)
+“Criador, Escritor e Empreendedor.”
+
+Subheadline:
+“Minha missão é inspirar e provocar coragem nas pessoas que estão recomeçando, travadas, ou perdidas no meio do caminho. Aqui, você encontra presença, clareza e direção.”
+
+Mini Bio (Seção de apresentação curta):
+“Sou Matheus Farias. Escritor, criador e empreendedor. Vivo uma jornada de recomeço, construindo minha vida do zero. Minha missão é viver com coragem, clareza e propósito — e inspirar quem me acompanha a fazer o mesmo.”
+
+CTA — Chamadas para ação na home:
+“Saiba mais sobre mim” → link para Sobre
+
+“Ver meu portfólio” → link para Portfólio
+
+(Opcional) “Fale comigo” → link para Contato
