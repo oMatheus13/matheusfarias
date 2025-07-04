@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"> <!-- Alterado para pt-BR para consistência -->
+    <head>
+        <!-- Metadados Essenciais -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Título da Página (SEO mais importante ) -->
+        <title>Matheus Farias | Criador, Escritor e Empreendedor</title>
+
+        <!-- Meta Descrição (SEO) -->
+        <meta name="description" content="Matheus Farias é um criador, escritor e empreendedor focado em propósito, impacto e autenticidade. Explore seu portfólio de identidade visual e livros.">
+
+        <!-- Canonical URL (SEO) -->
+        <link rel="canonical" href="https://www.seusite.com.br/index.html">
+
+        <!-- Robots Meta Tag (SEO ) -->
+        <meta name="robots" content="index, follow">
+
+        <!-- Favicon (Ícone do Site) -->
+        <link rel="icon" href="/assets/img/favicon/favicon.ico" sizes="any">
+        <link rel="icon" href="/assets/img/favicon/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Matheus Farias | Criador, Escritor e Empreendedor">
+        <meta property="og:description" content="Matheus Farias é um criador, escritor e empreendedor focado em propósito, impacto e autenticidade. Explore seu portfólio de identidade visual e livros.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.seusite.com.br/index.html">
+        <meta property="og:image" content="https://www.seusite.com.br/assets/img/og-image.jpg">
+        <meta property="og:image:alt" content="Foto de perfil de Matheus Farias com fundo desfocado">
+        <meta property="og:site_name" content="Matheus Farias Portfolio">
+        <meta property="og:locale" content="pt_BR">
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@seutwitterhandle">
+        <meta name="twitter:creator" content="@seutwitterhandle">
+        <meta name="twitter:title" content="Matheus Farias | Criador, Escritor e Empreendedor">
+        <meta name="twitter:description" content="Matheus Farias é um criador, escritor e empreendedor focado em propósito, impacto e autenticidade. Explore seu portfólio de identidade visual e livros.">
+        <meta name="twitter:image" content="https://www.seusite.com.br/assets/img/twitter-image.jpg">
+        <meta name="twitter:image:alt" content="Foto de perfil de Matheus Farias com fundo desfocado">
+
+        <!-- Structured Data (Schema.org - JSON-LD ) -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Matheus Farias",
+        "url": "https://www.seusite.com.br/",
+        "image": "https://www.seusite.com.br/assets/img/matheus-farias-profile.jpg",
+        "sameAs": [
+            "https://www.instagram.com/seumatheusfarias/",
+            "https://www.linkedin.com/in/seumatheusfarias/",
+            "https://twitter.com/seumatheusfarias"
+        ],
+        "jobTitle": "Criador, Escritor e Empreendedor",
+        "alumniOf": "Nome da Sua Instituição de Ensino (Opcional )",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Nome da Sua Empresa/Marca (Opcional)"
+        },
+        "description": "Matheus Farias é um criador, escritor e empreendedor focado em propósito, impacto e autenticidade, com expertise em identidade visual e escrita."
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Matheus Farias Portfolio",
+        "url": "https://www.seusite.com.br/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.seusite.com.br/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+        }
+        </script>
+
+        <!-- Links para CSS -->
+        <!-- A ordem é importante: reset, depois fontes, depois seus estilos principais, depois componentes, depois estilos de página. -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/variables.css"> <!-- Certifique-se que este arquivo existe e contém as variáveis -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/components.css"> <!-- Onde está o CSS do header -->
+        <link rel="stylesheet" href="assets/css/pages/home.css"> <!-- Estilos específicos para a página inicial -->
+
+    </head>
+
+    <body>
+        <!-- HEADER vai ser carregado aqui -->
+        <div id="header-placeholder"></div> <!-- Use um div simples para o placeholder -->
+
+        <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
+        <main>
+            <h1>Bem-vindo ao meu site</h1>
+            <p>Este é o conteúdo da minha página inicial.</p>
+        </main>
+
+        <!-- FOOTER vai ser carregado aqui -->
+        <div id="footer-placeholder"></div> <!-- Use um div simples para o placeholder -->
+
+        <!-- SCRIPT para carregar header e footer -->
+        <!-- Este script deve vir ANTES do main.js se main.js precisar dos elementos do header/footer imediatamente -->
+        <!-- Ou você pode ter um script separado para carregar componentes e outro para a lógica do site -->
+        <script>
+            // Função para carregar um componente HTML
+            function loadComponent(placeholderId, filePath ) {
+                const placeholder = document.getElementById(placeholderId);
+                if (placeholder) {
+                    fetch(filePath)
+                        .then(res => {
+                            if (!res.ok) {
+                                throw new Error(`HTTP error! status: ${res.status}`);
+                            }
+                            return res.text();
+                        })
+                        .then(data => {
+                            placeholder.innerHTML = data;
+                            // Se houver scripts dentro do HTML injetado, eles não serão executados automaticamente.
+                            // Para o header/footer, isso geralmente não é um problema, pois a lógica (main.js)
+                            // está sendo carregada separadamente e com 'defer'.
+                        })
+                        .catch(error => console.error(`Erro ao carregar ${filePath}:`, error));
+                }
+            }
+
+            // Carrega o header e o footer
+            loadComponent('header-placeholder', 'includes/header.html');
+            loadComponent('footer-placeholder', 'includes/footer.html');
+
+            // IMPORTANTE: O script main.js (que contém a lógica do menu hambúrguer)
+            // deve ser carregado DEPOIS que o header for injetado no DOM.
+            // Como você está usando 'defer' no script de main.js, ele já espera o DOM estar pronto.
+            // Então, a ordem no HTML (script de fetch primeiro, depois main.js com defer) está OK.
+        </script>
+
+        <script src="distassets/js/main.js" defer></script>
+        <!-- Adicione outros scripts específicos da página, se houver -->
+        <!-- Ex: <script src="/assets/js/pages/home.js" defer></script> -->
+
+    </body>
+</html>
