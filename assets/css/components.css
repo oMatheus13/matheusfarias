@@ -1,0 +1,158 @@
+/* src/assets/css/components.css */
+/* Ou src/assets/scss/_components.scss se estiver usando Sass */
+
+/* Variáveis (se você estiver usando CSS puro, pode definir aqui ou em main.css) */
+/* Se estiver usando Sass, estas viriam de _variables.scss */
+:root {
+    --color-obsidian: #1A1A1A; /* Exemplo de cor escura */
+    --color-sand: #F5F5DC;     /* Exemplo de cor clara */
+    --font-family-primary: 'Griff', sans-serif; /* Substitua pelo nome da sua fonte principal */
+    --font-weight-semibold: 600; /* Ajuste conforme o peso real da sua fonte */
+    --font-weight-light: 300;    /* Ajuste conforme o peso real da sua fonte */
+    --spacing-md: 1.5rem; /* Exemplo de espaçamento */
+    --spacing-lg: 2rem;   /* Exemplo de espaçamento */
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    max-width: 1200px; /* Largura máxima do seu conteúdo */
+    margin: 0 auto;    /* Centraliza o container */
+    padding: 0 var(--spacing-md); /* Padding nas laterais */
+}
+
+/* Estilos do Cabeçalho Principal */
+.main-header {
+    background-color: var(--color-obsidian); /* Cor de fundo do cabeçalho */
+    padding: var(--spacing-md) 0; /* Padding superior e inferior */
+    color: var(--color-sand); /* Cor do texto no cabeçalho */
+    position: sticky; /* Faz o cabeçalho "grudar" no topo ao rolar */
+    top: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between; /* Espaça logo e navegação */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Estilos da Logo */
+.logo {
+    font-family: var(--font-family-primary);
+    font-size: 1.3rem; /* Tamanho da fonte da logo */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 0.1em; /* Espaçamento entre letras */
+    white-space: nowrap; /* Evita que o nome quebre em duas linhas */
+}
+
+.logo__matheus {
+    font-weight: var(--font-weight-semibold); /* Peso Semibold para "MATHEUS" */
+}
+
+.logo__farias {
+    font-weight: var(--font-weight-light); /* Peso Light para "FARIAS" */
+}
+
+/* Estilos da Navegação Principal */
+.main-nav__toggle {
+    display: none; /* Esconde o botão de toggle por padrão em telas maiores */
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001; /* Acima do menu para ser clicável */
+}
+
+.main-nav__toggle-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-sand);
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav__toggle-icon::before,
+.main-nav__toggle-icon::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-sand);
+    position: absolute;
+    transition: transform 0.3s ease, top 0.3s ease;
+}
+
+.main-nav__toggle-icon::before {
+    top: -8px;
+}
+
+.main-nav__toggle-icon::after {
+    top: 8px;
+}
+
+/* Animação do ícone do hambúrguer para "X" */
+.main-nav__toggle[aria-expanded="true"] .main-nav__toggle-icon {
+    background-color: transparent; /* Esconde a barra do meio */
+}
+
+.main-nav__toggle[aria-expanded="true"] .main-nav__toggle-icon::before {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.main-nav__toggle[aria-expanded="true"] .main-nav__toggle-icon::after {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.main-nav__list {
+    display: flex; /* Exibe os itens em linha em telas maiores */
+    gap: var(--spacing-lg); /* Espaçamento entre os itens */
+}
+
+.main-nav__link {
+    color: var(--color-sand);
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    transition: color 0.3s ease;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+    color: rgba(255, 255, 255, 0.7); /* Exemplo de hover */
+}
+
+/* Media Queries para Responsividade (Mobile First) */
+@media (max-width: 768px) { /* Exemplo: para telas menores que 768px */
+    .main-nav__toggle {
+        display: block; /* Mostra o botão de toggle */
+    }
+
+    .main-nav__list {
+        display: none; /* Esconde a lista de navegação por padrão */
+        flex-direction: column; /* Itens em coluna */
+        position: absolute;
+        top: 100%; /* Abaixo do cabeçalho */
+        left: 0;
+        width: 100%;
+        background-color: var(--color-obsidian); /* Fundo do menu */
+        padding: var(--spacing-md) 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+
+    .main-nav__toggle[aria-expanded="true"] + .main-nav__list {
+        display: flex; /* Mostra a lista quando o botão é expandido */
+    }
+
+    .main-nav__item {
+        text-align: center;
+        padding: 0.8rem 0;
+    }
+
+    .main-nav__link {
+        display: block; /* Faz o link preencher o item */
+        padding: 0.5rem var(--spacing-md);
+    }
+}
