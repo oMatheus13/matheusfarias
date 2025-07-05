@@ -1,8 +1,8 @@
 /* Griff */
 @font-face {
     font-family: 'Griff';
-    src: url('assets/fonts/griff/Griff-BoldItalic.woff2') format('woff2'),
-        url('assets/fonts/griff/Griff-BoldItalic.woff') format('woff');
+    src: url('/assets/fonts/griff/Griff-BoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'Griff';
-    src: url('assets/fonts/griff/Griff-Italic.woff2') format('woff2'),
-        url('assets/fonts/griff/Griff-Italic.woff') format('woff');
+    src: url('/assets/fonts/griff/Griff-Italic.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: 'Griff';
-    src: url('assets/fonts/griff/Griff-Medium.woff2') format('woff2'),
-        url('assets/fonts/griff/Griff-Medium.woff') format('woff');
+    src: url('/assets/fonts/griff/Griff-Medium.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'Griff';
-    src: url('assets/fonts/griff/Griff-Light.woff2') format('woff2'),
-        url('assets/fonts/griff/Griff-Light.woff') format('woff');
+    src: url('/assets/fonts/griff/Griff-Light.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -37,8 +37,8 @@
 
 @font-face {
     font-family: 'Griff';
-    src: url('assets/fonts/griff/Griff-Bold.woff2') format('woff2'),
-        url('assets/fonts/griff/Griff-Bold.woff') format('woff');
+    src: url('/assets/fonts/griff/Griff-Bold.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -46,8 +46,8 @@
 
 @font-face {
     font-family: 'Griff';
-    src: url('assets/fonts/griff/Griff-LightItalic.woff2') format('woff2'),
-        url('assets/fonts/griff/Griff-LightItalic.woff') format('woff');
+    src: url('/assets/fonts/griff/Griff-LightItalic.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -55,8 +55,8 @@
 
 @font-face {
     font-family: 'Griff';
-    src: url('assets/fonts/griff/Griff-MediumItalic.woff2') format('woff2'),
-        url('assets/fonts/griff/Griff-MediumItalic.woff') format('woff');
+    src: url('/assets/fonts/griff/Griff-MediumItalic.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -64,8 +64,8 @@
 
 @font-face {
     font-family: 'Griff';
-    src: url('assets/fonts/griff/Griff-Regular.woff2') format('woff2'),
-        url('assets/fonts/griff/Griff-Regular.woff') format('woff');
+    src: url('/assets/fonts/griff/Griff-Regular.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -73,8 +73,8 @@
 
 @font-face {
     font-family: 'Griff';
-    src: url('assets/fonts/griff/Griff-Semibold.woff2') format('woff2'),
-        url('assets/fonts/griff/Griff-Semibold.woff') format('woff');
+    src: url('/assets/fonts/griff/Griff-Semibold.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -82,8 +82,8 @@
 
 @font-face {
     font-family: 'Griff';
-    src: url('assets/fonts/griff/Griff-SemiboldItalic.woff2') format('woff2'),
-        url('assets/fonts/griff/Griff-SemiboldItalic.woff') format('woff');
+    src: url('/assets/fonts/griff/Griff-SemiboldItalic.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-SemiboldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
@@ -92,8 +92,8 @@
 /* Work Sans*/
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-BlackItalic.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-BlackItalic.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-BlackItalic.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -101,8 +101,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-ExtraBold.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-ExtraBold.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-ExtraBold.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -110,8 +110,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-Black.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-Black.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-Black.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -119,8 +119,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-Bold.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-Bold.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-Bold.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -128,8 +128,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-BoldItalic.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-BoldItalic.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-BoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -137,8 +137,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-ExtraBoldItalic.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-ExtraBoldItalic.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-ExtraBoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -146,8 +146,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-ExtraLightItalic.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-ExtraLightItalic.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-ExtraLightItalic.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-ExtraLightItalic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -155,8 +155,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-Italic.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-Italic.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-Italic.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -164,8 +164,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-ExtraLight.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-ExtraLight.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-ExtraLight.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-ExtraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -173,8 +173,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-LightItalic.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-LightItalic.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-LightItalic.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -182,8 +182,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-Light.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-Light.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-Light.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -191,8 +191,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-Medium.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-Medium.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-Medium.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -200,8 +200,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-MediumItalic.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-MediumItalic.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-MediumItalic.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -209,8 +209,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-Regular.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-Regular.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-Regular.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -218,8 +218,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-SemiBold.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-SemiBold.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-SemiBold.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -227,8 +227,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-SemiBoldItalic.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-SemiBoldItalic.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-SemiBoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-SemiBoldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
@@ -236,8 +236,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-ThinItalic.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-ThinItalic.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-ThinItalic.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-ThinItalic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
@@ -245,8 +245,8 @@
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('assets/fonts/work-sans/WorkSans-Thin.woff2') format('woff2'),
-        url('assets/fonts/work-sans/WorkSans-Thin.woff') format('woff');
+    src: url('/assets/fonts/work-sans/WorkSans-Thin.woff2') format('woff2'),
+        url('/assets/fonts/work-sans/WorkSans-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
