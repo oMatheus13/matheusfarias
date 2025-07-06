@@ -1,10 +1,7 @@
-@import url('variable.css');
-@import url('font.css');
-
 /* Bloco: footer */
 .footer {
     background-color: var(--color-sand); /* Cor de fundo escura para o footer */
-    color: #f8f8f8; /* Cor do texto clara */
+    color: var(--color-sand); /* Cor do texto clara */
     font-family: Arial, sans-serif;
     line-height: 1.6;
     position: relative; /* Para posicionar o SVG */
@@ -17,6 +14,7 @@
     height: auto;
     line-height: 0; /* Remove espaço extra abaixo do SVG */
     margin-bottom: -5px; /* Ajuste fino para o SVG se sobrepor um pouco ao conteúdo abaixo */
+    fill: var(--color-moss);
 }
 
 .footer__divider svg {
@@ -42,21 +40,11 @@
     padding: 0; /* Remove padding padrão, ajuste conforme necessário */
 }
 
-/* Elemento: footer__heading */
-.footer__heading {
-    color: #E2725B; /* Cor dos títulos das seções */
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 1.1em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil abaixo dos títulos */
-    padding-bottom: 5px;
-    display: inline-block; /* Para que a borda não ocupe 100% da largura */
-}
-
 /* Elemento: footer__text */
 .footer__text {
     margin: 0;
     padding: 0;
+    font-family: var(--font-family-secondary);
 }
 
 /* Modificador: footer__text--made-by */
@@ -90,7 +78,9 @@
     text-decoration: underline;
 }
 
-
+.footer__logo {
+    margin-bottom: 20px;
+}
 
 /* Modificador: footer__section--copyright */
 .footer__section--copyright {
@@ -115,6 +105,10 @@
         margin-bottom: 0; /* Remove margem inferior */
     }
 
+    .footer__logo {
+        margin-bottom: 0;
+    }
+
     .footer__section {
         flex: 1; /* Distribui espaço igualmente dentro do grupo */
         text-align: left; /* Alinha o texto à esquerda */
@@ -127,13 +121,4 @@
         padding-top: 0; /* Remove padding superior */
         text-align: right; /* Alinha o copyright à direita */
     }
-
-    .footer__heading {
-        display: block; /* Ocupa 100% da largura novamente */
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-}
-
-.cls-1 {
-    fill: var(--color-moss);
 }
