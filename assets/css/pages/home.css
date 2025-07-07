@@ -1,4 +1,4 @@
-.main {
+.cier {
     background-color: var(--color-sand);
     max-width: 100vw; /* Largura máxima do seu conteúdo */
     margin: 0 auto;    /* Centraliza o container */
@@ -6,16 +6,17 @@
     color: var(--color-obsidian);
 }
 
-.main__hero {
+.cier__hero {
     height: 300px;
     background-color: var(--color-sand);
 }
 
-.main__text {
+.cier__text {
     text-align: center;
     font-weight: var(--font-weight-regular);
 }
 
-.main__text-title {
+.cier__text-title {
+    text-align: center;
     font-weight: var(--font-weight-semibold);
 }
