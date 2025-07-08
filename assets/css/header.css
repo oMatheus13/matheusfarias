@@ -89,7 +89,7 @@
 
 .nav__link:hover,
 .nav__link:focus {
-    color: rgba(255, 255, 255, 0.7); /* Exemplo de hover */
+    color: var(--color-olivegreen); /* Exemplo de hover */
 }
 
 /* Media Queries para Responsividade (Mobile First) */

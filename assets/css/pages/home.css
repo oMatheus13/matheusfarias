@@ -1,7 +1,9 @@
 .cier {
     background-color: var(--color-sand);
-    max-width: 100vw; /* Largura máxima do seu conteúdo */
-    margin: 0 auto;    /* Centraliza o container */
+    max-width: 100vw;
+    height: 100vh;
+    margin: var(--spacing-md);
+    padding: var(--spacing-md);
     font-family: var(--font-family-secondary);
     color: var(--color-obsidian);
 }

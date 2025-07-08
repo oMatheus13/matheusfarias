@@ -80,7 +80,6 @@
         </script>
 
         <!-- Links para CSS -->
-        <!-- A ordem é importante: reset, depois fontes, depois seus estilos principais, depois componentes, depois estilos de página. -->
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/fonts.css">
         <link rel="stylesheet" href="assets/css/variables.css">
@@ -92,26 +91,40 @@
     </head>
 
     <body class="page">
-        <!-- HEADER vai ser carregado aqui -->
-        <div id="header-placeholder"></div> <!-- Use um div simples para o placeholder -->
+        <div id="header-placeholder"></div> <!--Header-->
 
         <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
-        <main class="main page__main" id="hero">
-            <section class="cier page">
-                <h1 class="cier__title page__text-title">CIER — Coragem, Improviso, Execução e Recomeço</h1>
-                <p class="cier__text page__text">Eu sou Matheus Farias. Criei o Método CIER pra transformar fracasso em motor e medo em ação. Aqui tu aprende a atravessar o mar colocando o pé na água.</p>
-                <a href="cier.html" class="cier_cta page__text" aria-label="Página inicial de Matheus Farias">
+        <main class="main" id="hero">
+            <section class="cier">
+                <h1 class="cier__title">CIER — Coragem, Improviso, Execução e Recomeço</h1>
+                <p class="cier__text">Eu sou Matheus Farias. Criei o Método CIER pra transformar fracasso em motor e medo em ação. Aqui tu aprende a atravessar o mar colocando o pé na água.</p>
+                <a href="cier.html" class="cier__cta" aria-label="Página inicial de Matheus Farias">
                     <span class="cier__buttom">Ler o Manifesto CIER</span>
                 </a>
             </section>
+
+            <section id="about-short">
+                <h2>De onde vem o CIER</h2>
+                <p>Quando criança eu era curioso e corajoso. Agora, eu sou isso multiplicado. Cada projeto, livro, quadro ou vídeo carrega essa coragem de começar sem saber tudo — aprender no caminho — e recomeçar melhor.</p>
+                <a href="about.html">Sobre Mim</a>
+            </section>
+
+            <section id="fragments-preview">
+            <h2>Fragmentos</h2>
+                <p>Cada fragmento aqui é um pedaço meu. Não são troféus polidos — são marcas reais de coragem, improviso, execução e recomeço. São provas vivas de que o CIER não é teoria: é ação, é rastro, é cicatriz que ensina.</p>
+                <a href="fragments.html" title="Portfólio">See Fragments</a>
+            </section>
+
+            <section id="cta">
+                <h2>Quer aplicar o CIER?</h2>
+                <p>Em breve, ensino cada detalhe. Enquanto isso, meu livro tá pronto — e eu também. Quer começar? Me chama.</p>
+                <a href="contact.html">Fala Comigo</a>
+                <a href="cier.html">Manifesto Completo</a>
+            </section>
         </main>
 
-        <!-- FOOTER vai ser carregado aqui -->
-        <div id="footer-placeholder"></div> <!-- Use um div simples para o placeholder -->
+        <div id="footer-placeholder"></div> <!--Footer-->
 
-        <!-- SCRIPT para carregar header e footer -->
-        <!-- Este script deve vir ANTES do main.js se main.js precisar dos elementos do header/footer imediatamente -->
-        <!-- Ou você pode ter um script separado para carregar componentes e outro para a lógica do site -->
         <script>
             // Função para carregar um componente HTML
             function loadComponent(placeholderId, filePath ) {
