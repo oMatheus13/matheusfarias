@@ -100,6 +100,7 @@
 @media (max-width: 768px) { /* Exemplo: para telas menores que 768px */
     .nav__toggle {
         display: block; /* Mostra o botão de toggle */
+        -webkit-tap-highlight-color: transparent;
     }
 
     .nav__list {
