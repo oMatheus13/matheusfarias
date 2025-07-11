@@ -1,6 +1,6 @@
 /* Bloco: footer */
 .footer {
-    background-color: var(--color-sand); /* Cor de fundo escura para o footer */
+    background-color: var(--color-sand-light); /* Cor de fundo escura para o footer */
     color: var(--color-sand); /* Cor do texto clara */
     font-family: var(--font-family-secondary);
     font-weight: var(--font-weight-regular);
