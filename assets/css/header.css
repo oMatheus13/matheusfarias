@@ -103,21 +103,27 @@
     }
 
     .nav__list {
-        display: none; /* Esconde a lista de navegação por padrão */
-        flex-direction: column; /* Itens em coluna */
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
         position: absolute;
-        top: 100%; /* Abaixo do cabeçalho */
+        top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--color-obsidian); /* Fundo do menu */
-        padding: var(--spacing-md) 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: var(--color-moss);
+        border-bottom-left-radius: var(--font-size-2xl);
+        border-bottom-right-radius: var(--font-size-2xl);
+        padding: 0;
         z-index: 999;
+        transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
     }
 
+
     .nav__toggle[aria-expanded="true"] + .nav__list {
-        display: flex; /* Mostra a lista quando o botão é expandido */
+        max-height: 500px; /* Ou maior, depende da altura máxima real */
+        padding: var(--spacing-md) 0;
     }
+
 
     .nav__item {
         text-align: center;
