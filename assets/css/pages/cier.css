@@ -1,0 +1,34 @@
+body {
+  background-color: var(--color-sand-light);
+}
+
+.section {
+  background-color: var(--color-sand-light);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--font-size-4xl) var(--font-size-2xl);
+}
+
+.cier__title {
+  font-size: var(--font-size-h1);
+  margin-bottom: var(--spacing-2xl);
+  text-align: center;
+}
+
+.cier__container {
+  padding: var(--font-size-xs);
+}
+
+.cier__pillars-item {
+  margin-bottom: var(--font-size-4xl);
+  padding: var(--font-size-xs);
+}
+
+.cier__pillars-item-title {
+  font-size: var(--font-size-h3);
+  margin-bottom: var(--spacing-xs);
+}
+
+.cier__pillars-item-text {
+  margin-top: var(--spacing-xs);
+}

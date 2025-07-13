@@ -13,3 +13,44 @@ p, a, blockquote, pre, dl, dd, ol, ul, figure, figcaption, hr, fieldset, legend 
     font-family: var(--font-family-secondary);
 }
 
+/*
+* {
+    outline: 1px solid red;
+}
+
+* * {
+    outline: 1px solid orange;
+}
+
+* * * {
+    outline: 1px solid yellow;
+}
+
+* * * * {
+    outline: 1px solid green;
+}
+
+* * * * * {
+    outline: 1px solid blue;
+}
+
+* * * * * * {
+    outline: 2px solid purple;
+}
+
+* * * * * * * {
+    outline: 2px solid pink;
+}
+
+* * * * * * * * {
+    outline: 3px solid cyan;
+}
+
+* * * * * * * * * {
+    outline: 3px solid lime;
+}
+
+* * * * * * * * * * {
+    outline: 4px solid brown;
+}
+*/

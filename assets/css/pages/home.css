@@ -1,3 +1,7 @@
+body {
+    background-color: var(--color-sand-light);
+}
+
 .section {
     background-color: var(--color-sand-light);
     max-width: 1000px;
