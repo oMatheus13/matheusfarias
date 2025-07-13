@@ -2,7 +2,7 @@ body {
     background-color: var(--color-sand-light);
 }
 
-.section {
+.u-section {
     background-color: var(--color-sand-light);
     max-width: 1000px;
     margin: 0 auto;

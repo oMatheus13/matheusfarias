@@ -2,7 +2,7 @@ body {
   background-color: var(--color-sand-light);
 }
 
-.section {
+.u-section {
   background-color: var(--color-sand-light);
   max-width: 1000px;
   margin: 0 auto;
@@ -31,4 +31,13 @@ body {
 
 .cier__pillars-item-text {
   margin-top: var(--spacing-xs);
+}
+
+.cier__cta-container {
+  padding: var(--font-size-xs);
+}
+
+.cier__cta-title {
+  font-size: var(--font-size-h2);
+  margin-bottom: var(--spacing-xs);
 }
