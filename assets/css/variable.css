@@ -55,7 +55,7 @@
     --font-size-6xl: 3.75rem;  /* 60px */
     --font-size-7xl: 4.5rem;   /* 72px */
     
-    /* Tamanhos Específicos para CIER */
+    /* Tamanhos de Títulos */
     --font-size-h1: var(--font-size-6xl);
     --font-size-h2: var(--font-size-4xl);
     --font-size-h3: var(--font-size-3xl);
