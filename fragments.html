@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <!-- Metadados Essenciais -->
+    <!-- Metadados Essenciais (omitted for brevity) -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>###TITULO###</title>
-    <meta name="description" content="***DESCRICAO***" />
-
+    <title>Fragmentos | Portfólio</title>
+    <meta
+      name="description"
+      content="Um museu do que eu já criei. Projetos de design, identidades visuais, livros, conteúdos e criações que fizeram parte de etapas importantes da minha vida."
+    />
     <link rel="canonical" href="https://www.omatheus.com/" />
 
     <!-- Robots Meta Tag -->
@@ -21,8 +23,11 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="###TITULO###" />
-    <meta property="og:description" content="***DESCRICAO***" />
+    <meta property="og:title" content="Fragmentos | Portfólio" />
+    <meta
+      property="og:description"
+      content="Um museu do que eu já criei. Projetos de design, identidades visuais, livros, conteúdos e criações que fizeram parte de etapas importantes da minha vida."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.omatheus.com/" />
     <!-- Troque o caminho da imagem se quiser -->
@@ -35,8 +40,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@omatheus13_" />
     <meta name="twitter:creator" content="@omatheus13_" />
-    <meta name="twitter:title" content="###TITULO###" />
-    <meta name="twitter:description" content="***DESCRICAO***" />
+    <meta name="twitter:title" content="Fragmentos | Portfólio" />
+    <meta
+      name="twitter:description"
+      content="Um museu do que eu já criei. Projetos de design, identidades visuais, livros, conteúdos e criações que fizeram parte de etapas importantes da minha vida."
+    />
     <!-- Troque o caminho da imagem se quiser -->
     <meta name="twitter:image" content="/assets/img/twitter-image.jpg" />
     <meta name="twitter:image:alt" content="Foto de perfil de Matheus Farias com fundo desfocado" />
@@ -56,7 +64,7 @@
           "@type": "Organization",
           "name": "MatheusFarias"
         },
-        "description": "***DESCRICAO***"
+        "description": "Um museu do que eu já criei. Projetos de design, identidades visuais, livros, conteúdos e criações que fizeram parte de etapas importantes da minha vida."
       }
     </script>
     <script type="application/ld+json">
@@ -81,6 +89,7 @@
     <link rel="stylesheet" href="assets/css/logo.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/fragments.css" />
   </head>
 
   <body class="page">
@@ -89,28 +98,93 @@
 
     <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
     <main class="main">
-      <h1>Página em desenvolvimento, volte mais tarde.</h1>
+      <section class="fragments">
+        <div class="fragments__hero">
+          <h1 class="fragments__title">Fragmentos</h1>
+          <p class="fragments__subtitle">
+            Este é um museu do que eu já criei. Ao longo da minha jornada, desenvolvi projetos de design, identidades
+            visuais, livros, conteúdos e criações que fizeram parte de etapas importantes da minha vida. E eu junto
+            esses Fragmentos pra te mostrar que nada precisa nascer perfeito. Precisa nascer, viver, quebrar — e deixar
+            história.
+          </p>
+          <p class="fragments__description">
+            Este espaço não é uma vitrine de serviços. É um arquivo vivo do que construí até aqui. Alguns projetos
+            viraram produto. Outros foram teste. Muitos abriram portas — outros fecharam ciclos. Cada fragmento é prova
+            de que improviso, execução e recomeço não são frases — são prática.
+          </p>
+          <div class="fragments__navigation">
+            <h2 class="fragments__navigation-title">Como navegar:</h2>
+            <p class="fragments__navigation-description">
+              Clique em qualquer fragmento pra abrir a história completa: o contexto, o desafio, a execução, o que deu
+              certo, o que deu errado. Sem pose. Só processo.
+            </p>
+          </div>
+          <div class="fragments__target">
+            <h2 class="fragments__target-title">Pra quem é:</h2>
+            <p class="fragments__target-description">
+              Pra quem quer conhecer meu caminho de dentro pra fora. Pra quem quer ver que o CIER não é teoria — é
+              cicatriz aberta. Pra quem acredita que criar é colecionar rascunhos. E pra quem pensa em criar também.
+            </p>
+          </div>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="fragments__filters">
+          <h2 class="fragments__filters-title">Filtrar por:</h2>
+          <ul class="fragments__filters-list" id="fragmentFilters">
+            <li><button class="fragments__filter-button" data-filter="all">Todos</button></li>
+            <li><button class="fragments__filter-button" data-filter="design">Design</button></li>
+            <li><button class="fragments__filter-button" data-filter="editorial">Editorial</button></li>
+            <li><button class="fragments__filter-button" data-filter="ilustracao">Ilustração</button></li>
+            <!-- Add more filter buttons as needed -->
+          </ul>
+        </div>
+
+        <div class="fragments__grid" id="fragmentGrid">
+          <div class="fragment-card" data-tags="design editorial ilustracao">
+          <img src="fragments\o-que-o-mundo-deveria-saber\imagens-projeto\fotos-livro-fisico\Book_Dust_Jacket_Mockup_1.png"
+            alt="Imagem do projeto"
+            class="fragment-card__image"/>
+          <div class="fragment-card__content">
+            <h3 class="fragment-card__title">O Que o Mundo Deveria Saber</h3>
+            <p class="fragment-card__description">
+              Criação completa de livro de poesias (capa, diagramação e ilustrações). Este projeto marcou o início da
+              Editora Umoya e foi um divisor de águas na minha trajetória criativa.
+            </p>
+            <ul class="fragment-card__tags">
+              <li class="fragment-card__tag">Design</li>
+              <li class="fragment-card__tag">Editorial</li>
+              <li class="fragment-card__tag">Ilustração</li>
+            </ul>
+            <a href="fragments/o-que-o-mundo-deveria-saber/index.html" class="fragment-card__button">Explorar Fragmento</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--Footer-->
     <div id="footer-placeholder"></div>
 
     <script>
-      // Carrega header e footer externos
+      // Função pra carregar o header e o footer
       function loadComponent(placeholderId, filePath) {
         const placeholder = document.getElementById(placeholderId);
         if (placeholder) {
           fetch(filePath)
             .then((res) => {
-              if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+              if (!res.ok) {
+                throw new Error(`HTTP error! status: ${res.status}`);
+              }
               return res.text();
             })
             .then((data) => {
               placeholder.innerHTML = data;
-              // Ativa menu hambúrguer se for header
+
+              // SE for o header, ativa o menu hambúrguer
               if (placeholderId === "header-placeholder") {
                 const toggle = document.querySelector(".nav__toggle");
                 const menu = document.getElementById("nav__menu");
+
                 if (toggle && menu) {
                   toggle.addEventListener("click", () => {
                     const expanded = toggle.getAttribute("aria-expanded") === "true";
@@ -124,10 +198,13 @@
             .catch((error) => console.error(`Erro ao carregar ${filePath}:`, error));
         }
       }
+
       // Executa o load do header e footer
       loadComponent("header-placeholder", "includes/header.html");
       loadComponent("footer-placeholder", "includes/footer.html");
     </script>
+
+    <script src="/assets/js/fragments.js" defer></script>
     <script src="/assets/js/main.js" defer></script>
   </body>
 </html>
