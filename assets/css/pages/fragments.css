@@ -1,6 +1,5 @@
 .fragments {
   padding: var(--spacing-md);
-  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -73,9 +72,10 @@
 }
 
 .fragments__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex; /* Changed to flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
   gap: var(--spacing-md);
+  justify-content: space-evenly; /* Align items to the left */
 }
 
 /* Fragment Card Styles */
@@ -85,6 +85,10 @@
   transition: transform var(--transition-fast), box-shadow var(--transition-normal);
   box-shadow: var(--box-shadow-default);
   background-color: var(--color-sand-light);
+  width: 380px; /* Fixed width for the cards */
+  height: 520px; /* Fixed height for the cards */
+  position: relative; /* Required for absolute positioning of the button */
+  flex: 0 0 auto; /*  prevent the cards from stretching */
 }
 
 .fragment-card:hover {
@@ -115,6 +119,10 @@
   margin-bottom: var(--spacing-md);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .fragment-card__tags {
@@ -146,6 +154,9 @@
   transition: background-color var(--transition-fast), transform var(--transition-fast);
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-medium);
+  position: absolute;
+  bottom: var(--spacing-md);
+  left: var(--spacing-md);
 }
 
 .fragment-card__button:hover {
@@ -192,6 +203,78 @@
 .fragments__filter-button.active {
   background-color: var(--color-terracotta);
   color: var(--color-sand-light);
+}
+
+/* Hidden Class */
+.hidden {
+  display: none !important;
+}
+
+/*  Changes:
+    - Reduced hero section padding to create more visual breathing room.
+    - Adjusted font sizes for titles and subtitles for better readability.
+    - Modified card styles for a cleaner, more modern look.
+    - Improved filter button styles for better user experience.
+    - Added subtle transitions for a smoother interaction.
+*/
+
+/* Hero Section Adjustments */
+.fragments__hero {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+}
+
+/* Title and Subtitle Adjustments */
+.fragments__title {
+  font-size: var(--font-size-5xl); /* Increased title size */
+  margin-bottom: var(--spacing-lg);
+}
+
+.fragments__subtitle {
+  font-size: var(--font-size-lg); /* Slightly reduced subtitle size */
+  font-weight: var(--font-weight-regular); /* Made subtitle less bold */
+}
+
+/* Card Style Enhancements */
+.fragment-card {
+  border: 1px solid var(--color-sand-dark); /* Added subtle border */
+  box-shadow: var(--box-shadow-sm); /* Reduced shadow intensity */
+}
+
+.fragment-card:hover {
+  box-shadow: var(--box-shadow-default); /* Slightly increased shadow on hover */
+}
+
+.fragment-card__image {
+  height: 220px; /* Adjusted image height */
+}
+
+.fragment-card__title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-xs); /* Reduced spacing below title */
+}
+
+.fragment-card__description {
+  font-size: var(--font-size-sm); /* Slightly reduced description size */
+  color: var(--color-stonegray); /* Changed description color for better readability */
+}
+
+.fragment-card__button {
+  padding: var(--spacing-xs) var(--spacing-md); /* Reduced button padding */
+  font-size: var(--font-size-sm); /* Reduced button font size */
+}
+
+/* Filter Button Improvements */
+.fragments__filter-button {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-lg); /* Increased border-radius */
+  font-size: var(--font-size-xs); /* Reduced font size */
+  font-weight: var(--font-weight-medium); /* Made filter buttons slightly bolder */
+}
+
+.fragments__filter-button:hover,
+.fragments__filter-button.active {
+  box-shadow: var(--box-shadow-sm); /* Added a subtle shadow on hover/active */
 }
 
 /* Hidden Class */
