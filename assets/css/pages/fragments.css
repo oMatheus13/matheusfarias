@@ -222,7 +222,7 @@
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .fragments__title {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-h2);
   }
 
   .fragments__subtitle {
