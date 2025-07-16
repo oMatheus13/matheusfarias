@@ -1,35 +1,51 @@
-@import url('variable.css');
-@import url('font.css');
+@import url("variable.css");
+@import url("font.css");
 
 body {
-    -webkit-tap-highlight-color: transparent;
-    background-color: var(--color-sand-light);
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--color-sand-light);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-primary);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-primary);
 }
 
-p, a, blockquote, pre, dl, dd, ol, ul, figure, figcaption, hr, fieldset, legend {
-    font-family: var(--font-family-secondary);
+p,
+a,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+figcaption,
+hr,
+fieldset,
+legend {
+  font-family: var(--font-family-secondary);
 }
 
 .main section {
-    background-color: var(--color-sand-light);
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: var(--font-size-4xl) var(--font-size-5xl);
+  background-color: var(--color-sand-light);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--font-size-4xl) var(--font-size-5xl);
 }
 
 .main article {
-    background-color: var(--color-sand-light);
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: var(--font-size-4xl) var(--font-size-5xl);
+  background-color: var(--color-sand-light);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--font-size-4xl) var(--font-size-5xl);
 }
 
-
-
+/*
 * {
     outline: 1px solid red;
 }
@@ -69,3 +85,4 @@ p, a, blockquote, pre, dl, dd, ol, ul, figure, figcaption, hr, fieldset, legend 
 * * * * * * * * * * {
     outline: 4px solid brown;
 }
+*/
