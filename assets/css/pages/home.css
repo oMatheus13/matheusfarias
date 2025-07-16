@@ -4,7 +4,6 @@
 
 .cier__container {
   text-align: left;
-  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 .cier__title {
@@ -72,7 +71,6 @@
 
 .about__container {
   text-align: left;
-  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 .about__title {
@@ -97,7 +95,6 @@
 
 .fragments__container {
   text-align: left;
-  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 .fragments__title {
@@ -122,7 +119,6 @@
 
 .contact__container {
   text-align: left;
-  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 .contact__title {
@@ -139,4 +135,14 @@
   margin-bottom: var(--spacing-xl);
   font-family: var(--font-family-secondary);
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .cier__cta,
+  .about__cta,
+  .fragments__cta,
+  .contact__cta {
+    width: 100%;
+    text-align: center;
+  }
 }

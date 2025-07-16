@@ -1,26 +1,29 @@
+/* CSS document - assets/css/pages/fragments.css */
+
+/* General Fragments Page Styles */
 .fragments {
-  padding: var(--spacing-md);
   margin: 0 auto;
 }
 
 .fragments__hero {
   margin-bottom: var(--spacing-md);
+  padding: var(--spacing-md); /* Added padding for visual breathing room */
 }
 
 .fragments__title {
-  font-size: var(--font-size-4xl);
-  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-5xl); /* Increased title size */
+  margin-bottom: var(--spacing-lg);
   color: var(--color-moss);
   font-family: var(--font-family-primary);
 }
 
 .fragments__subtitle {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg); /* Slightly reduced subtitle size */
   line-height: 1.4;
   margin-bottom: var(--spacing-lg);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-regular); /* Made subtitle less bold */
 }
 
 .fragments__description {
@@ -31,6 +34,7 @@
   font-family: var(--font-family-secondary);
 }
 
+/* Navigation and Target Styles (Consider removing or simplifying these if not used) */
 .fragments__navigation {
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-md);
@@ -71,11 +75,12 @@
   font-family: var(--font-family-secondary);
 }
 
+/* Fragment Grid Styles */
 .fragments__grid {
-  display: flex; /* Changed to flexbox */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--spacing-md);
-  justify-content: space-evenly; /* Align items to the left */
+  justify-content: space-evenly;
 }
 
 /* Fragment Card Styles */
@@ -83,22 +88,23 @@
   border-radius: var(--border-radius-md);
   overflow: hidden;
   transition: transform var(--transition-fast), box-shadow var(--transition-normal);
-  box-shadow: var(--box-shadow-default);
+  box-shadow: var(--box-shadow-sm); /* Reduced shadow intensity */
   background-color: var(--color-sand-light);
-  width: 380px; /* Fixed width for the cards */
-  height: 520px; /* Fixed height for the cards */
-  position: relative; /* Required for absolute positioning of the button */
-  flex: 0 0 auto; /*  prevent the cards from stretching */
+  width: 380px;
+  height: 520px;
+  position: relative;
+  flex: 0 0 auto;
+  border: 1px solid var(--color-sand-dark); /* Added subtle border */
 }
 
 .fragment-card:hover {
   transform: translateY(-5px);
-  box-shadow: var(--box-shadow-md);
+  box-shadow: var(--box-shadow-default); /* Slightly increased shadow on hover */
 }
 
 .fragment-card__image {
   width: 100%;
-  height: 200px;
+  height: 220px; /* Adjusted image height */
   object-fit: cover;
 }
 
@@ -108,16 +114,16 @@
 
 .fragment-card__title {
   font-size: var(--font-size-xl);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs); /* Reduced spacing below title */
   color: var(--color-moss);
   font-family: var(--font-family-primary);
 }
 
 .fragment-card__description {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm); /* Slightly reduced description size */
   line-height: 1.4;
   margin-bottom: var(--spacing-md);
-  color: var(--color-obsidian);
+  color: var(--color-stonegray); /* Changed description color for better readability */
   font-family: var(--font-family-secondary);
   overflow: hidden;
   display: -webkit-box;
@@ -146,7 +152,7 @@
 
 .fragment-card__button {
   display: inline-block;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-md); /* Reduced button padding */
   background-color: var(--color-terracotta);
   color: var(--color-sand-light);
   text-decoration: none;
@@ -157,6 +163,7 @@
   position: absolute;
   bottom: var(--spacing-md);
   left: var(--spacing-md);
+  font-size: var(--font-size-sm); /* Reduced button font size */
 }
 
 .fragment-card__button:hover {
@@ -192,92 +199,71 @@
   background-color: var(--color-sand);
   color: var(--color-moss);
   border: none;
-  border-radius: var(--border-radius-full);
-  font-size: var(--font-size-sm);
+  border-radius: var(--border-radius-lg); /* Increased border-radius */
+  font-size: var(--font-size-xs); /* Reduced font size */
   font-family: var(--font-family-secondary);
   cursor: pointer;
-  transition: background-color var(--transition-fast), color var(--transition-fast);
+  transition: background-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast); /* Added transition for box-shadow */
+  font-weight: var(--font-weight-medium); /* Made filter buttons slightly bolder */
 }
 
 .fragments__filter-button:hover,
 .fragments__filter-button.active {
   background-color: var(--color-terracotta);
   color: var(--color-sand-light);
-}
-
-/* Hidden Class */
-.hidden {
-  display: none !important;
-}
-
-/*  Changes:
-    - Reduced hero section padding to create more visual breathing room.
-    - Adjusted font sizes for titles and subtitles for better readability.
-    - Modified card styles for a cleaner, more modern look.
-    - Improved filter button styles for better user experience.
-    - Added subtle transitions for a smoother interaction.
-*/
-
-/* Hero Section Adjustments */
-.fragments__hero {
-  margin-bottom: var(--spacing-lg);
-  padding: var(--spacing-md);
-}
-
-/* Title and Subtitle Adjustments */
-.fragments__title {
-  font-size: var(--font-size-5xl); /* Increased title size */
-  margin-bottom: var(--spacing-lg);
-}
-
-.fragments__subtitle {
-  font-size: var(--font-size-lg); /* Slightly reduced subtitle size */
-  font-weight: var(--font-weight-regular); /* Made subtitle less bold */
-}
-
-/* Card Style Enhancements */
-.fragment-card {
-  border: 1px solid var(--color-sand-dark); /* Added subtle border */
-  box-shadow: var(--box-shadow-sm); /* Reduced shadow intensity */
-}
-
-.fragment-card:hover {
-  box-shadow: var(--box-shadow-default); /* Slightly increased shadow on hover */
-}
-
-.fragment-card__image {
-  height: 220px; /* Adjusted image height */
-}
-
-.fragment-card__title {
-  font-size: var(--font-size-xl);
-  margin-bottom: var(--spacing-xs); /* Reduced spacing below title */
-}
-
-.fragment-card__description {
-  font-size: var(--font-size-sm); /* Slightly reduced description size */
-  color: var(--color-stonegray); /* Changed description color for better readability */
-}
-
-.fragment-card__button {
-  padding: var(--spacing-xs) var(--spacing-md); /* Reduced button padding */
-  font-size: var(--font-size-sm); /* Reduced button font size */
-}
-
-/* Filter Button Improvements */
-.fragments__filter-button {
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--border-radius-lg); /* Increased border-radius */
-  font-size: var(--font-size-xs); /* Reduced font size */
-  font-weight: var(--font-weight-medium); /* Made filter buttons slightly bolder */
-}
-
-.fragments__filter-button:hover,
-.fragments__filter-button.active {
   box-shadow: var(--box-shadow-sm); /* Added a subtle shadow on hover/active */
 }
 
 /* Hidden Class */
 .hidden {
   display: none !important;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .fragments__title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .fragments__subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .fragments__description {
+    font-size: var(--font-size-sm);
+  }
+
+  .fragments__grid {
+    justify-content: center;
+  }
+
+  .fragment-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .fragment-card__image {
+    height: 180px;
+  }
+
+  .fragment-card__content {
+    padding: var(--spacing-sm);
+  }
+
+  .fragment-card__title {
+    font-size: var(--font-size-lg);
+  }
+
+  .fragment-card__description {
+    font-size: var(--font-size-xs);
+    -webkit-line-clamp: 4;
+  }
+
+  .fragment-card__button {
+    position: static;
+    margin-top: var(--spacing-sm);
+    width: 100%;
+    padding: var(--spacing-sm);
+    text-align: center;
+  }
 }

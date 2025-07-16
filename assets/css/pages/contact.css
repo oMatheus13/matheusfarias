@@ -1,6 +1,4 @@
 .contact {
-  padding: var(--spacing-md);
-  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -338,17 +336,9 @@
   padding: var(--spacing-sm); /* Use CSS variable for padding */
 }
 
-body {
-  background-color: var(--color-sand-light);
-}
-
 @media (max-width: 768px) {
-  .contact {
-    padding: var(--spacing-sm);
-  }
-
   .contact__title {
-    font-size: var(--font-size-5xl);
+    font-size: var(--font-size-h2);
   }
 
   .contact__description,
@@ -357,7 +347,7 @@ body {
   .contact__social-description,
   .contact__faq-question,
   .contact__faq-answer {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
   }
 
   .contact__social-list {
@@ -387,7 +377,7 @@ body {
   }
 
   .contact__social-link {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-base);
   }
 
   .contact__social-icon svg {
@@ -395,7 +385,10 @@ body {
     height: 32px;
   }
 
-  .contact__methods-item,
+  .contact__methods-note {
+    display: none;
+  }
+
   .contact__social-item {
     flex-direction: column;
     align-items: center;

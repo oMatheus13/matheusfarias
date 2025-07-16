@@ -35,14 +35,14 @@ legend {
   background-color: var(--color-sand-light);
   max-width: 1000px;
   margin: 0 auto;
-  padding: var(--font-size-4xl) var(--font-size-5xl);
+  padding: var(--spacing-md);
 }
 
 .main article {
   background-color: var(--color-sand-light);
   max-width: 1000px;
   margin: 0 auto;
-  padding: var(--font-size-4xl) var(--font-size-5xl);
+  padding: var(--spacing-md);
 }
 
 /*

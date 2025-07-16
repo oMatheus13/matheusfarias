@@ -1,5 +1,4 @@
 .about {
-  padding: var(--spacing-md);
   max-width: 850px;
   margin: 0 auto;
 }
@@ -56,4 +55,11 @@ body {
   padding-left: var(--spacing-lg);
   border-left: 3px solid var(--color-terracotta);
   font-family: var(--font-family-primary);
+}
+
+@media (max-width: 768px) {
+  .about__link {
+    width: 100%;
+    text-align: center;
+  }
 }
