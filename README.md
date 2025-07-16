@@ -63,19 +63,19 @@ A seguir, apresentamos a estrutura hierárquica do site, delineando as principai
 
 *   **Páginas Secundárias**
     *   **Página do Método CIER (`cier.html`)**
-        *   **URL:** `https://www.omatheus.com/cier.html`
+        *   **URL:** `https://www.omatheus.com/cier`
         *   **Propósito:** Detalhamento aprofundado de cada um dos pilares do Método CIER, com exemplos e aplicações práticas.
     *   **Página Sobre (`about.html`)**
-        *   **URL:** `https://www.omatheus.com/about.html`
+        *   **URL:** `https://www.omatheus.com/about`
         *   **Propósito:** Expansão da história pessoal e profissional de Matheus Farias, incluindo sua formação, experiências e inspirações.
     *   **Página de Fragmentos (`fragments.html`)**
-        *   **URL:** `https://www.omatheus.com/fragments.html`
+        *   **URL:** `https://www.omatheus.com/fragments`
         *   **Propósito:** Apresentação completa do portfólio de projetos, com descrições detalhadas e, quando aplicável, links para os trabalhos.
     *   **Página de Contato (`contact.html`)**
-        *   **URL:** `https://www.omatheus.com/contact.html`
+        *   **URL:** `https://www.omatheus.com/contact`
         *   **Propósito:** Fornece diversas formas de contato, como e-mail, redes sociais e, possivelmente, um formulário de contato.
     *   **Página de Erro 404 (`404.html`)**
-        *   **URL:** `https://www.omatheus.com/404.html`
+        *   **URL:** `https://www.omatheus.com/404`
         *   **Propósito:** Página padrão exibida quando um usuário tenta acessar uma URL inexistente no site, com opções de navegação para outras seções.
 
 ## Contribuição e Suporte
