@@ -83,6 +83,7 @@
     <link rel="stylesheet" href="../../fragments/o-que-o-mundo-deveria-saber/fonts.css" />
     <link rel="stylesheet" href="../../fragments/o-que-o-mundo-deveria-saber/variables.css" />
     <link rel="stylesheet" href="../../fragments/o-que-o-mundo-deveria-saber/style.css" />
+    <link rel="stylesheet" href="../../includes/flipbook/style.css" />
   </head>
 
   <body class="page">
@@ -92,14 +93,25 @@
     <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
     <main class="main">
       <h1>Fragmento em Construção</h1>
+      <div id="flipbook-images" style="display: none;">
+        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="cover-image" alt="Capa" />
+        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-03.jpg" id="page-1-image" alt="Página 1" />
+        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="page-2-image" alt="Página 2" />
+        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="page-3-image" alt="Página 3" />
+        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="page-4-image" alt="Página 4" />
+        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="thankyou-image" alt="Agradecimento" />
+      </div>
+      <div id="flipbook-container"></div>
     </main>
 
     <!--Footer-->
     <div id="footer-placeholder"></div>
 
+    <script src="../../includes/flipbook/jquery.js"></script>
+    <script src="../../includes/flipbook/turn.js"></script>
     <script>
       // Carrega header e footer externos
-      function loadComponent(placeholderId, filePath) {
+      function loadComponent(placeholderId, filePath, callback) {
         const placeholder = document.getElementById(placeholderId);
         if (placeholder) {
           fetch(filePath)
@@ -109,6 +121,10 @@
             })
             .then((data) => {
               placeholder.innerHTML = data;
+              // Execute callback after the content is loaded
+              if (callback) {
+                callback();
+              }
               // Ativa menu hambúrguer se for header
               if (placeholderId === "header-placeholder") {
                 const toggle = document.querySelector(".nav__toggle");
@@ -129,6 +145,27 @@
       // Executa o load do header e footer
       loadComponent("header-placeholder", "../../includes/header.html");
       loadComponent("footer-placeholder", "../../includes/footer.html");
+      loadComponent("flipbook-container", "../../includes/flipbook/flipbook.html", function() {
+        // Callback function to inject images into the flipbook
+        const coverImageSrc = document.getElementById("cover-image").src;
+        const page1ImageSrc = document.getElementById("page-1-image").src;
+        const page2ImageSrc = document.getElementById("page-2-image").src;
+        const page3ImageSrc = document.getElementById("page-3-image").src;
+        const page4ImageSrc = document.getElementById("page-4-image").src;
+        const thankyouImageSrc = document.getElementById("thankyou-image").src;
+
+        console.log('coverImageSrc', coverImageSrc);
+        console.log('page1ImageSrc', page1ImageSrc);
+
+        document.querySelector("#flipbook-cover img").src = coverImageSrc;
+        document.querySelector("#flipbook-page-1 img").src = page1ImageSrc;
+        document.querySelector("#flipbook-page-2 img").src = page2ImageSrc;
+        document.querySelector("#flipbook-page-3 img").src = page3ImageSrc;
+        document.querySelector("#flipbook-page-4 img").src = page4ImageSrc;
+        document.querySelector("#flipbook-thankyou img").src = thankyouImageSrc;
+
+        $(".flipbook").turn();
+      });
     </script>
     <script src="../../fragments/o-que-o-mundo-deveria-saber/main.js" defer></script>
   </body>
