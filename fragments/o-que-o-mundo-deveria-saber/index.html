@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>O Que o Mundo Deveria Saber | Fragmento</title>
-    <meta name="description" content="Criação completa de livro de poesias (capa, diagramação e ilustrações). Este projeto marcou o início da Editora Umoya e foi um divisor de águas na minha trajetória criativa." />
+    <meta
+      name="description"
+      content="Criação completa de livro de poesias (capa, diagramação e ilustrações). Este projeto marcou o início da Editora Umoya e foi um divisor de águas na minha trajetória criativa."
+    />
 
     <link rel="canonical" href="https://www.omatheus.com/fragments/o-que-o-mundo-deveria-saber/index" />
 
@@ -22,7 +25,10 @@
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="O Que o Mundo Deveria Saber | Fragmento" />
-    <meta property="og:description" content="Criação completa de livro de poesias (capa, diagramação e ilustrações). Este projeto marcou o início da Editora Umoya e foi um divisor de águas na minha trajetória criativa." />
+    <meta
+      property="og:description"
+      content="Criação completa de livro de poesias (capa, diagramação e ilustrações). Este projeto marcou o início da Editora Umoya e foi um divisor de águas na minha trajetória criativa."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.omatheus.com/" />
     <!-- Troque o caminho da imagem se quiser -->
@@ -36,7 +42,10 @@
     <meta name="twitter:site" content="@omatheus13_" />
     <meta name="twitter:creator" content="@omatheus13_" />
     <meta name="twitter:title" content="O Que o Mundo Deveria Saber | Fragmento" />
-    <meta name="twitter:description" content="Criação completa de livro de poesias (capa, diagramação e ilustrações). Este projeto marcou o início da Editora Umoya e foi um divisor de águas na minha trajetória criativa." />
+    <meta
+      name="twitter:description"
+      content="Criação completa de livro de poesias (capa, diagramação e ilustrações). Este projeto marcou o início da Editora Umoya e foi um divisor de águas na minha trajetória criativa."
+    />
     <!-- Troque o caminho da imagem se quiser -->
     <meta name="twitter:image" content="../../assets/img/twitter-image.jpg" />
     <meta name="twitter:image:alt" content="Foto de perfil de Matheus Farias com fundo desfocado" />
@@ -93,13 +102,22 @@
     <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
     <main class="main">
       <h1>Fragmento em Construção</h1>
-      <div id="flipbook-images" style="display: none;">
-        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="cover-image" alt="Capa" />
-        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-03.jpg" id="page-1-image" alt="Página 1" />
-        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="page-2-image" alt="Página 2" />
-        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="page-3-image" alt="Página 3" />
-        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="page-4-image" alt="Página 4" />
-        <img src="../assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="thankyou-image" alt="Agradecimento" />
+
+
+      <!-- Flipbook -->
+      <div id="flipbook-images" style="display: none">
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="cover-image" alt="Capa" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-03.jpg" id="page-1-image" alt="Página 1" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-02.jpg" id="page-2-image" alt="Página 2" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-04.jpg" id="page-3-image" alt="Página 3" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-05.jpg" id="page-4-image" alt="Página 4" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-06.jpg" id="page-5-image" alt="Página 5" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="page-6-image" alt="Página 6" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-01.jpg" id="page-7-image" alt="Página 7" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-02.jpg" id="page-8-image" alt="Página 8" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-03.jpg" id="page-9-image" alt="Página 9" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-04.jpg" id="page-10-image" alt="Página 10" />
+        <img src="assets/img/paginas-internas-e-diagramacao/pagina-interna-07.jpg" id="backcover-image" alt="Verso da Capa" />
       </div>
       <div id="flipbook-container"></div>
     </main>
@@ -145,26 +163,40 @@
       // Executa o load do header e footer
       loadComponent("header-placeholder", "../../includes/header.html");
       loadComponent("footer-placeholder", "../../includes/footer.html");
-      loadComponent("flipbook-container", "../../includes/flipbook/flipbook.html", function() {
+      loadComponent("flipbook-container", "../../includes/flipbook/flipbook.html", function () {
         // Callback function to inject images into the flipbook
         const coverImageSrc = document.getElementById("cover-image").src;
         const page1ImageSrc = document.getElementById("page-1-image").src;
         const page2ImageSrc = document.getElementById("page-2-image").src;
         const page3ImageSrc = document.getElementById("page-3-image").src;
         const page4ImageSrc = document.getElementById("page-4-image").src;
-        const thankyouImageSrc = document.getElementById("thankyou-image").src;
+        const page5ImageSrc = document.getElementById("page-5-image").src;
+        const page6ImageSrc = document.getElementById("page-6-image").src;
+        const page7ImageSrc = document.getElementById("page-7-image").src;
+        const page8ImageSrc = document.getElementById("page-8-image").src;
+        const page9ImageSrc = document.getElementById("page-9-image").src;
+        const page10ImageSrc = document.getElementById("page-10-image").src;
+        const backcoverImageSrc = document.getElementById("backcover-image").src;
 
-        console.log('coverImageSrc', coverImageSrc);
-        console.log('page1ImageSrc', page1ImageSrc);
+        console.log("coverImageSrc", coverImageSrc);
+        console.log("page1ImageSrc", page1ImageSrc);
 
         document.querySelector("#flipbook-cover img").src = coverImageSrc;
         document.querySelector("#flipbook-page-1 img").src = page1ImageSrc;
         document.querySelector("#flipbook-page-2 img").src = page2ImageSrc;
         document.querySelector("#flipbook-page-3 img").src = page3ImageSrc;
         document.querySelector("#flipbook-page-4 img").src = page4ImageSrc;
-        document.querySelector("#flipbook-thankyou img").src = thankyouImageSrc;
+        document.querySelector("#flipbook-page-5 img").src = page5ImageSrc;
+        document.querySelector("#flipbook-page-6 img").src = page6ImageSrc;
+        document.querySelector("#flipbook-page-7 img").src = page7ImageSrc;
+        document.querySelector("#flipbook-page-8 img").src = page8ImageSrc;
+        document.querySelector("#flipbook-page-9 img").src = page9ImageSrc;
+        document.querySelector("#flipbook-page-10 img").src = page10ImageSrc;
+        document.querySelector("#flipbook-backcover img").src = backcoverImageSrc;
 
-        $(".flipbook").turn();
+        $(".flipbook").turn({
+          autoCenter: true
+        });
       });
     </script>
     <script src="../../fragments/o-que-o-mundo-deveria-saber/main.js" defer></script>
