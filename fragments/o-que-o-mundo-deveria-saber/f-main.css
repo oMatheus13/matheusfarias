@@ -43,7 +43,7 @@ body {
   font-family: var(--font-family-secondary); /* Work Sans */
   font-size: 1.1rem;
   line-height: 1.7;
-  font-weight: 500;
+  font-weight: var(--font-weight-regular);
   color: var(--omds-color-text-dark);
   margin-bottom: var(--spacing-lg);
 }
@@ -123,10 +123,10 @@ body {
 .omds__galeria-description,
 .omds__aplicacoes-description,
 .omds__leitor-description {
-  font-family: var(--omds-font-family-body); /* Cormorant */
+  font-family: var(--font-family-secondary); /* Work Sans */
   font-size: 1.1rem;
   line-height: 1.7;
-  font-weight: 500;
+  font-weight: var(--font-weight-regular);
   color: var(--omds-color-text-dark);
   margin-bottom: var(--spacing-lg);
 }
