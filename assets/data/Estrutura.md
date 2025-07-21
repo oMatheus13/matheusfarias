@@ -168,6 +168,13 @@
 │   ├── videos/
 │   │   └── (arquivos de vídeo)
 │   └── data/ (se houver dados de conteúdo)
+├── fragments/
+│   ├── o-que-o-mundo-deveria-saber/
+│   │   ├── assets/...
+│   │   └── index.html
+│   └── o-fracasso-e-seu-melhor-amigo/
+│       ├── assets/...
+│       └── index.html
 ├── pages/
 │   ├── 404.html
 │   ├── about.html
