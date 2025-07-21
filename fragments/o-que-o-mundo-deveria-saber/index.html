@@ -83,15 +83,15 @@
     </script>
 
     <!-- Links para CSS -->
-    <link rel="stylesheet" href="../../css/reset.css" />
-    <link rel="stylesheet" href="../../css/fonts.css" />
-    <link rel="stylesheet" href="../../css/components/logo.css" />
-    <link rel="stylesheet" href="../../css/components/header.css" />
-    <link rel="stylesheet" href="../../css/components/footer.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/components/logo.css" />
+    <link rel="stylesheet" href="/css/components/header.css" />
+    <link rel="stylesheet" href="/css/components/footer.css" />
     <link rel="stylesheet" href="f-font.css" />
     <link rel="stylesheet" href="f-variable.css" />
     <link rel="stylesheet" href="f-main.css" />
-    <link rel="stylesheet" href="../../includes/flipbook/style.css" />
+    <link rel="stylesheet" href="/includes/flipbook/style.css" />
   </head>
 
   <body>
@@ -404,8 +404,8 @@
     <!--Footer-->
     <div id="footer-placeholder"></div>
 
-    <script src="../../includes/flipbook/jquery.js"></script>
-    <script src="../../includes/flipbook/turn.js"></script>
+    <script src="/includes/flipbook/jquery.js"></script>
+    <script src="/includes/flipbook/turn.js"></script>
     <script>
       // Carrega header e footer externos
       function loadComponent(placeholderId, filePath, callback) {
@@ -440,9 +440,9 @@
         }
       }
       // Executa o load do header e footer
-      loadComponent("header-placeholder", "../../includes/header.html");
-      loadComponent("footer-placeholder", "../../includes/footer.html");
-      loadComponent("flipbook-container", "../../includes/flipbook/flipbook.html", function () {
+      loadComponent("header-placeholder", "/includes/header.html");
+      loadComponent("footer-placeholder", "/includes/footer.html");
+      loadComponent("flipbook-container", "/includes/flipbook/flipbook.html", function () {
         // Callback function to inject images into the flipbook
         const coverImageSrc = document.getElementById("cover-image").src;
         const page1ImageSrc = document.getElementById("page-1-image").src;

@@ -74,14 +74,14 @@
     </script>
 
     <!-- Links para CSS -->
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/fonts.css" />
-    <link rel="stylesheet" href="../css/variables.css" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/components/logo.css" />
-    <link rel="stylesheet" href="../css/components/header.css" />
-    <link rel="stylesheet" href="../css/components/footer.css" />
-    <link rel="stylesheet" href="../css/pages/404.css">
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/components/logo.css" />
+    <link rel="stylesheet" href="/css/components/header.css" />
+    <link rel="stylesheet" href="/css/components/footer.css" />
+    <link rel="stylesheet" href="/css/pages/404.css">
   </head>
 
   <body>
@@ -98,7 +98,7 @@
             Ops! Parece que você tentou acessar uma página que não existe.<br />
             Verifique o endereço ou volte para a página inicial.
           </p>
-          <a href="/index.html" class="notfound__button">Voltar para o início</a>
+          <a href="/" class="notfound__button">Voltar para o início</a>
         </div>
       </section>
     </main>
@@ -136,10 +136,9 @@
         }
       }
       // Executa o load do header e footer
-      loadComponent("header-placeholder", "../includes/header.html");
-      loadComponent("footer-placeholder", "../includes/footer.html");
+      loadComponent("header-placeholder", "/includes/header.html");
+      loadComponent("footer-placeholder", "/includes/footer.html");
     </script>
-    <script src="../js/main.js" defer></script>
+    <script src="/js/main.js" defer></script>
   </body>
 </html>
-
