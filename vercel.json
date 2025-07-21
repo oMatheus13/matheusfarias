@@ -1,18 +1,14 @@
 {
   "rewrites": [
     {
-      "source": "/:path((?!assets|api).*)?",
-      "destination": "/pages/:path.html"
-    },
-    {
-      "source": "/:path((?!assets|api|pages).*)?",
-      "destination": "/fragments/:path.html"
+      "source": "/:path*",
+      "destination": "/api/router"
     }
   ],
   "redirects": [
     {
       "source": "/OQueOMundoDeveriaSaber",
-      "destination": "https://www.omatheus.com/fragments/o-que-o-mundo-deveria-saber/index",
+      "destination": "/o-que-o-mundo-deveria-saber",
       "permanent": true
     }
   ]

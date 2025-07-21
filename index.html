@@ -74,14 +74,14 @@
     </script>
 
     <!-- Links para CSS -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/components/logo.css" />
-    <link rel="stylesheet" href="css/components/header.css" />
-    <link rel="stylesheet" href="css/components/footer.css" />
-    <link rel="stylesheet" href="css/pages/home.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components/logo.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/pages/home.css" />
   </head>
 
   <body>
@@ -104,7 +104,7 @@
             <li class="cier__item"><strong>R —</strong> O fracasso é seu melhor amigo.</li>
           </ul>
 
-          <a href="pages/cier.html" class="cier__cta">Ver Método Completo</a>
+          <a href="/cier" class="cier__cta">Ver Método Completo</a>
         </div>
       </section>
 
@@ -122,7 +122,7 @@
             Aqui você vai encontrar minha jornada, minha história, meus projetos, meu livro e tudo que faz parte do meu
             caminho como criador e ser humano.
           </p>
-          <a href="pages/about.html" class="about__cta">Conhecer Minha História</a>
+          <a href="/about" class="about__cta">Conhecer Minha História</a>
         </div>
       </section>
 
@@ -137,7 +137,7 @@
             Hoje, meu foco principal é minha marca pessoal, minha jornada como criador e escritor. Este portfólio não é
             uma vitrine de serviços, mas sim um registro do meu caminho criativo.
           </p>
-          <a href="pages/fragments.html" class="fragments__cta">Ver Todos os Fragmentos</a>
+          <a href="/fragments" class="fragments__cta">Ver Todos os Fragmentos</a>
         </div>
       </section>
 
@@ -145,7 +145,7 @@
         <div class="contact__container">
           <h2 class="contact__title">Conecte-se</h2>
           <p class="contact__text">Quer conversar? Me manda uma ideia, proposta ou só diz oi.</p>
-          <a href="pages/contact.html" class="contact__cta">Detalhes de Contato</a>
+          <a href="/contact" class="contact__cta">Detalhes de Contato</a>
         </div>
       </section>
     </main>
@@ -188,10 +188,11 @@
       }
 
       // Executa o load do header e footer
-      loadComponent("header-placeholder", "includes/header.html");
-      loadComponent("footer-placeholder", "includes/footer.html");
+      loadComponent("header-placeholder", "/includes/header.html");
+      loadComponent("footer-placeholder", "/includes/footer.html");
     </script>
 
-    <script src="js/main.js" defer></script>
+    <script src="/js/main.js" defer></script>
   </body>
 </html>
+
