@@ -1,21 +1,15 @@
 {
   "rewrites": [
     {
-      "source": "/:path((?!assets|api).*)",
-      "destination": "/:path.html"
+      "source": "/:path((?!assets|api).*)?",
+      "destination": "/pages/:path.html"
+    },
+    {
+      "source": "/:path((?!assets|api|pages).*)?",
+      "destination": "/fragments/:path.html"
     }
   ],
   "redirects": [
-    {
-      "source": "/oqomds",
-      "destination": "https://www.omatheus.com/fragments/o-que-o-mundo-deveria-saber/index",
-      "permanent": true
-    },
-    {
-      "source": "/o-que-o-mundo-deveria-saber",
-      "destination": "https://www.omatheus.com/fragments/o-que-o-mundo-deveria-saber/index",
-      "permanent": true
-    },
     {
       "source": "/OQueOMundoDeveriaSaber",
       "destination": "https://www.omatheus.com/fragments/o-que-o-mundo-deveria-saber/index",
