@@ -82,14 +82,14 @@
     </script>
 
     <!-- Links para CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/fonts.css" />
-    <link rel="stylesheet" href="assets/css/variables.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/logo.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="stylesheet" href="assets/css/pages/fragments.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components/logo.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/pages/fragments.css" />
   </head>
 
   <body>
@@ -121,7 +121,7 @@
         <!-- Fragmento O Que o Mundo Deveria Saber-->
         <div class="fragments__grid" id="fragmentGrid">
           <div class="fragment-card" data-tags="design editorial ilustração livro">
-            <img src="fragments/o-que-o-mundo-deveria-saber/assets/img/fotos-livro-fisico/Book_Dust_Jacket_Mockup_1.png"
+            <img src="../fragments/o-que-o-mundo-deveria-saber/assets/img/fotos-livro-fisico/Book_Dust_Jacket_Mockup_1.png"
               alt="Imagem do projeto"
               class="fragment-card__image"/>
             <div class="fragment-card__content">
@@ -130,12 +130,12 @@
                 Criação completa de livro de poesias (capa, diagramação e ilustrações). Este projeto marcou o início da
                 Editora Umoya e foi um divisor de águas na minha trajetória criativa.
               </p>
-              <a href="fragments/o-que-o-mundo-deveria-saber/index.html" class="fragment-card__button">Explorar Fragmento</a>
+              <a href="../fragments/o-que-o-mundo-deveria-saber/index.html" class="fragment-card__button">Explorar Fragmento</a>
             </div>
           </div>
         <!-- Fragmento O Fracasso é Seu Melhor Amigo-->
           <div class="fragment-card" data-tags="design editorial ilustração livro">
-            <img src="fragments/o-fracasso-e-seu-melhor-amigo/assets/img/thumbnail-ebook.jpg"
+            <img src="../fragments/o-fracasso-e-seu-melhor-amigo/assets/img/thumbnail-ebook.jpg"
               alt="Imagem do projeto"
               class="fragment-card__image"/>
             <div class="fragment-card__content">
@@ -144,7 +144,7 @@
                 Criação completa de livro de poesias (capa, diagramação e ilustrações). Este projeto marcou o início da
                 Editora Umoya e foi um divisor de águas na minha trajetória criativa.
               </p>
-              <a href="fragments/o-fracasso-e-seu-melhor-amigo/index.html" class="fragment-card__button">Explorar Fragmento</a>
+              <a href="../fragments/o-fracasso-e-seu-melhor-amigo/index.html" class="fragment-card__button">Explorar Fragmento</a>
             </div>
           </div>
         </div>
@@ -189,12 +189,11 @@
       }
 
       // Executa o load do header e footer
-      loadComponent("header-placeholder", "includes/header.html");
-      loadComponent("footer-placeholder", "includes/footer.html");
+      loadComponent("header-placeholder", "../includes/header.html");
+      loadComponent("footer-placeholder", "../includes/footer.html");
     </script>
 
-    <script src="/assets/js/fragments.js" defer></script>
-    <script src="/assets/js/main.js" defer></script>
+    <script src="../js/pages/fragments.js" defer></script>
+    <script src="../js/main.js" defer></script>
   </body>
 </html>
-

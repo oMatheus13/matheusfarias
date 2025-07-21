@@ -58,7 +58,7 @@
         "name": "Matheus Farias",
         "url": "https://www.omatheus.com/",
         "image": "https://www.omatheus.com/assets/img/matheus-farias-profile.jpg",
-        "sameAs": ["https://www.instagram.com/omatheus13_/", "https://github.com/omatheus13/"],
+        "sameAs": ["https://www.instagram.com/omatheus13_/", "https://github.com/omatheus13/",
         "jobTitle": "Criador, Escritor e Empreendedor",
         "alumniOf": "Método CIER",
         "worksFor": {
@@ -83,14 +83,14 @@
     </script>
 
     <!-- Links para CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/fonts.css" />
-    <link rel="stylesheet" href="assets/css/variables.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/logo.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="stylesheet" href="assets/css/pages/about.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components/logo.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/pages/about.css" />
   </head>
 
   <body>
@@ -143,7 +143,7 @@
           aplicar, criar tua própria versão. Vamos juntos.
         </p>
 
-        <a href="/cier.html" class="about__link">Conheça o Método</a>
+        <a href="../pages/cier.html" class="about__link">Conheça o Método</a>
       </article>
     </main>
 
@@ -180,9 +180,10 @@
         }
       }
       // Executa o load do header e footer
-      loadComponent("header-placeholder", "includes/header.html");
-      loadComponent("footer-placeholder", "includes/footer.html");
+      loadComponent("header-placeholder", "../includes/header.html");
+      loadComponent("footer-placeholder", "../includes/footer.html");
     </script>
-    <script src="/assets/js/main.js" defer></script>
+    <script src="../js/main.js" defer></script>
   </body>
 </html>
+
