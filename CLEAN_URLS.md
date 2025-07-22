@@ -6,10 +6,11 @@ Este documento explica como usar URLs limpas neste projeto, por que implementamo
 
 Para entender o contexto destas instruções, é importante estar familiarizado com a estrutura de diretórios do projeto:
 
+```
 / (diretório raiz) 
 ├── index.html # Página principal 
-├── api/ 
-│ └── router/ 
+│   ├── api/ 
+│   └── router/ 
 │ 
 └── index.js # Função serverless para roteamento 
 ├── css/ # Arquivos CSS globais 
@@ -39,6 +40,8 @@ Para entender o contexto destas instruções, é importante estar familiarizado 
     │   ├── index.html
     │   └── ...
     └── ...
+```
+
 ## O Que São URLs Limpas?
 
 URLs limpas são endereços web legíveis para humanos e amigáveis para mecanismos de busca. Elas evitam expor a estrutura de arquivos subjacente e as extensões de arquivo. Por exemplo, em vez de:
