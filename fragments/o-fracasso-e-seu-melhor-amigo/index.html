@@ -586,7 +586,7 @@
     <script src="/includes/flipbook/turn.js"></script>
     <script>
       // Carrega header e footer externos
-      function loadComponent(placeholderId, filePath, callback) {
+      function loadComponent(placeholderId, filePath) {
         const placeholder = document.getElementById(placeholderId);
         if (placeholder) {
           fetch(filePath)
@@ -596,23 +596,6 @@
             })
             .then((data) => {
               placeholder.innerHTML = data;
-              // Execute callback after the content is loaded
-              if (callback) {
-                callback();
-              }
-              // Ativa menu hambúrguer se for header
-              if (placeholderId === "header-placeholder") {
-                const toggle = document.querySelector(".nav__toggle");
-                const menu = document.getElementById("nav__menu");
-                if (toggle && menu) {
-                  toggle.addEventListener("click", () => {
-                    const expanded = toggle.getAttribute("aria-expanded") === "true";
-                    toggle.setAttribute("aria-expanded", !expanded);
-                    menu.classList.toggle("is-active");
-                    toggle.classList.toggle("is-active");
-                  });
-                }
-              }
             })
             .catch((error) => console.error(`Erro ao carregar ${filePath}:`, error));
         }
@@ -657,6 +640,7 @@
       });
     </script>
     <script src="/fragments/o-fracasso-e-seu-melhor-amigo/f-main.js" defer></script>
+    <script src="/js/components/main.js" defer></script>
     <script src="/js/components/faq.js" defer></script>
   </body>
 </html>
