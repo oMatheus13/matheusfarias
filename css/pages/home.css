@@ -43,6 +43,7 @@
 
 .cier__cta,
 .about__cta,
+.diagnostic-home__cta,
 .fragments__cta,
 .contact__cta {
   display: inline-block;
@@ -60,6 +61,7 @@
 
 .cier__cta:hover,
 .about__cta:hover,
+.diagnostic-home__cta:hover,
 .fragments__cta:hover,
 .contact__cta:hover {
   background-color: var(--color-terracotta-dark);
@@ -82,6 +84,31 @@
 }
 
 .about__text {
+  font-size: var(--font-size-lg);
+  color: var(--color-moss-dark);
+  margin-bottom: var(--spacing-xl);
+  font-family: var(--font-family-secondary);
+  line-height: 1.6;
+}
+
+/* Diagnostic Home Section */
+.diagnostic-home {
+  background-color: var(--color-sand-light);
+}
+
+.diagnostic-home__container {
+  text-align: left;
+}
+
+.diagnostic-home__title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-moss);
+  font-family: var(--font-family-primary);
+}
+
+.diagnostic-home__text {
   font-size: var(--font-size-lg);
   color: var(--color-moss-dark);
   margin-bottom: var(--spacing-xl);
@@ -140,6 +167,7 @@
 @media (max-width: 768px) {
   .cier__cta,
   .about__cta,
+  .diagnostic-home__cta,
   .fragments__cta,
   .contact__cta {
     width: 100%;
