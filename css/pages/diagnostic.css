@@ -1,19 +1,22 @@
 .diagnostic {
   padding: var(--section-padding-x);
+  text-align: left; /* Alinha o conteúdo à esquerda */
 }
 
 /* Hero Section */
 .diagnostic__hero {
-  text-align: center;
   margin-bottom: var(--spacing-3xl);
 }
 
 .diagnostic__image {
-  width: 200px;
-  height: 200px;
+  width: 150px; /* Reduz o tamanho da imagem */
+  height: 150px;
   border-radius: var(--border-radius-full);
   margin-bottom: var(--spacing-lg);
   object-fit: cover;
+  display: block; /* Garante que a imagem se comporte como um bloco */
+  margin-left: auto; /* Centraliza a imagem horizontalmente */
+  margin-right: auto;
 }
 
 .diagnostic__title {
@@ -130,7 +133,7 @@
 
 /* CTA Section */
 .diagnostic__cta {
-  text-align: center;
+  text-align: left; /* Alinha o conteúdo à esquerda */
 }
 
 .diagnostic__cta-button {
@@ -167,15 +170,18 @@
 
 /* Author Section */
 .diagnostic__author {
-  text-align: center;
+  text-align: left; /* Alinha o conteúdo à esquerda */
 }
 
 .diagnostic__author-image {
-  width: 150px;
-  height: 150px;
+  width: 100px; /* Reduz o tamanho da imagem */
+  height: 100px;
   border-radius: var(--border-radius-full);
   margin-bottom: var(--spacing-lg);
   object-fit: cover;
+  display: block; /* Garante que a imagem se comporte como um bloco */
+  margin-left: auto; /* Centraliza a imagem horizontalmente */
+  margin-right: auto;
 }
 
 .diagnostic__author-title {
@@ -195,8 +201,8 @@
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .diagnostic__image {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 
   .diagnostic__title {
