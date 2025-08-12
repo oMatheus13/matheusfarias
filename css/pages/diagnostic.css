@@ -1,6 +1,6 @@
 .diagnostic {
   padding: var(--section-padding-x);
-  text-align: left; /* Alinha o conteúdo à esquerda */
+  text-align: left;
 }
 
 /* Hero Section */
@@ -9,14 +9,7 @@
 }
 
 .diagnostic__image {
-  width: 150px; /* Reduz o tamanho da imagem */
-  height: 150px;
-  border-radius: var(--border-radius-full);
-  margin-bottom: var(--spacing-lg);
-  object-fit: cover;
-  display: block; /* Garante que a imagem se comporte como um bloco */
-  margin-left: auto; /* Centraliza a imagem horizontalmente */
-  margin-right: auto;
+  display: none; /* Hide the image in the hero section */
 }
 
 .diagnostic__title {
@@ -133,7 +126,7 @@
 
 /* CTA Section */
 .diagnostic__cta {
-  text-align: left; /* Alinha o conteúdo à esquerda */
+  text-align: left;
 }
 
 .diagnostic__cta-button {
@@ -170,18 +163,15 @@
 
 /* Author Section */
 .diagnostic__author {
-  text-align: left; /* Alinha o conteúdo à esquerda */
+  text-align: left;
 }
 
 .diagnostic__author-image {
-  width: 100px; /* Reduz o tamanho da imagem */
+  width: 100px;
   height: 100px;
   border-radius: var(--border-radius-full);
   margin-bottom: var(--spacing-lg);
   object-fit: cover;
-  display: block; /* Garante que a imagem se comporte como um bloco */
-  margin-left: auto; /* Centraliza a imagem horizontalmente */
-  margin-right: auto;
 }
 
 .diagnostic__author-title {
