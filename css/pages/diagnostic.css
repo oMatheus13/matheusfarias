@@ -12,9 +12,9 @@
   margin: 0 auto;
 }
 
-/* Estilos para o Hero da Página */
+/* Hero Section */
 .diagnostic__hero {
-  padding: var(--spacing-md);
+  padding: var(--spacing-xl) var(--spacing-md);
   text-align: center;
 }
 
@@ -23,20 +23,20 @@
   margin-bottom: var(--spacing-sm);
   color: var(--color-moss);
   font-family: var(--font-family-primary);
+  line-height: 1.2;
 }
 
 .diagnostic__subtitle {
   font-size: var(--font-size-lg);
   line-height: 1.6;
-  text-align: left;
-  margin: 0 auto;
-  max-width: 600px;
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-medium);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Estilos para a seção de identificação */
+/* Identification Section */
 .diagnostic__identification {
   padding: var(--spacing-md);
 }
@@ -58,23 +58,21 @@
 .diagnostic__identification-item {
   font-size: var(--font-size-base);
   line-height: 1.6;
-  text-align: left;
-  margin-bottom: var(--spacing-xs);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
+  margin-bottom: var(--spacing-xs);
 }
 
 .diagnostic__identification-text {
   font-size: var(--font-size-base);
   line-height: 1.6;
-  text-align: left;
   margin-top: var(--spacing-sm);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-medium);
 }
 
-/* Estilos para a seção de solução */
+/* Solution Section */
 .diagnostic__solution {
   padding: var(--spacing-md);
 }
@@ -90,11 +88,10 @@
 .diagnostic__solution-text {
   font-size: var(--font-size-base);
   line-height: 1.6;
-  text-align: left;
-  margin-bottom: var(--spacing-xs);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-xs);
 }
 
 .diagnostic__solution-list {
@@ -106,19 +103,17 @@
 .diagnostic__solution-item {
   font-size: var(--font-size-base);
   line-height: 1.6;
-  text-align: left;
-  margin-bottom: var(--spacing-xs);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
+  margin-bottom: var(--spacing-xs);
 }
 
 .diagnostic__solution-subtitle {
   font-size: var(--font-size-xl);
-  text-align: left;
-  margin-top: var(--spacing-sm);
-  margin-bottom: var(--spacing-xs);
   color: var(--color-moss);
   font-family: var(--font-family-primary);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
 }
 
 .diagnostic__solution-steps {
@@ -130,13 +125,12 @@
 .diagnostic__solution-step {
   font-size: var(--font-size-base);
   line-height: 1.6;
-  text-align: left;
-  margin-bottom: var(--spacing-sm);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
+  margin-bottom: var(--spacing-sm);
 }
 
-/* Estilos para a seção de planos */
+/* Plans Section */
 .diagnostic__plans {
   padding: var(--spacing-md);
   text-align: center;
@@ -153,36 +147,31 @@
 .diagnostic__plans-attention {
   font-size: var(--font-size-base);
   line-height: 1.6;
-  text-align: center;
-  margin-bottom: var(--spacing-xs);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-xs);
 }
 
 .diagnostic__plans-availability {
   font-size: var(--font-size-base);
   line-height: 1.6;
-  text-align: center;
-  margin-bottom: var(--spacing-xs);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-xs);
 }
 
 .diagnostic__plans-price {
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-bold);
-  text-align: center;
-  margin-bottom: var(--spacing-sm);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
+  margin-bottom: var(--spacing-sm);
 }
 
 .diagnostic__cta-button {
-  display: block;
-  width: fit-content;
-  margin: 0 auto; /* Centraliza o botão */
+  display: inline-block;
   padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-terracotta);
   color: var(--color-sand-light);
@@ -198,7 +187,7 @@
   background-color: var(--color-terracotta-dark);
 }
 
-/* Estilos para a seção de garantia */
+/* Guarantee Section */
 .diagnostic__guarantee {
   padding: var(--spacing-md);
 }
@@ -214,13 +203,12 @@
 .diagnostic__guarantee-text {
   font-size: var(--font-size-base);
   line-height: 1.6;
-  text-align: left;
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-medium);
 }
 
-/* Estilos para a seção do autor */
+/* Author Section */
 .diagnostic__author {
   padding: var(--spacing-md);
 }
@@ -235,38 +223,35 @@
 
 .diagnostic__author-content {
   display: flex;
-  flex-direction: column; /* Alterado para column em telas menores */
-  align-items: flex-start; /* Alinha os itens à esquerda */
+  flex-direction: column;
+  align-items: center; /* Center align by default */
+  text-align: center; /* Center text by default */
 }
 
 .diagnostic__author-image {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: var(--border-radius-full);
   object-fit: cover;
-  margin-bottom: var(--spacing-sm); /* Adiciona margem abaixo da imagem em telas menores */
+  margin-bottom: var(--spacing-sm);
 }
 
 .diagnostic__author-text {
   font-size: var(--font-size-base);
   line-height: 1.6;
-  text-align: left;
-  margin-bottom: var(--spacing-xs);
   color: var(--color-obsidian);
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-xs);
 }
 
-/* Estilos para a seção de FAQ (mantidos no arquivo faq.css) */
+/* FAQ Section - Styles remain in faq.css */
 
-/* Media query para telas maiores (desktop) */
-@media (min-width: 769px) {
-  /* Hero Section - Layout de duas colunas */
+/* Media Queries */
+@media (min-width: 768px) {
   .diagnostic__hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    text-align: center;
   }
 
   .diagnostic__title {
@@ -274,19 +259,31 @@
   }
 
   .diagnostic__subtitle {
-    max-width: 800px;
+    max-width: 900px;
   }
 
-  /* Seção do autor - Alinhamento horizontal */
   .diagnostic__author-content {
-    flex-direction: row; /* Restaura o layout de linha em telas maiores */
-    align-items: center; /* Alinha verticalmente os itens */
+    flex-direction: row;
+    align-items: center;
+    text-align: left; /* Left align text on larger screens */
   }
 
   .diagnostic__author-image {
-    width: 150px;
-    height: 150px;
     margin-right: var(--spacing-md);
-    margin-bottom: 0; /* Remove a margem inferior em telas maiores */
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .diagnostic__hero {
+    padding: var(--spacing-3xl) var(--spacing-xl);
+  }
+
+  .diagnostic__title {
+    font-size: var(--font-size-6xl);
+  }
+
+  .diagnostic__subtitle {
+    max-width: 1000px;
   }
 }
