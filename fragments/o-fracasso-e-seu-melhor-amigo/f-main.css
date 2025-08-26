@@ -17,6 +17,7 @@
 /* Main Section */
 .section.main {
   text-align: left;
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 .main-headline {
@@ -89,12 +90,14 @@
 /* Features Section */
 .section.features {
   background-color: var(--color-sand);
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 .features-box {
   background-color: var(--color-sand-light);
   border-radius: var(--border-radius-md);
   box-shadow: var(--box-shadow-default);
+  padding: var(--spacing-lg);
 }
 
 .features-box h1 {
@@ -113,6 +116,7 @@
 
 .features-list {
   list-style-type: decimal;
+  padding-left: var(--spacing-xl);
   margin-bottom: var(--spacing-lg);
 }
 
@@ -130,6 +134,7 @@
 
 /* Testimonial Section */
 .testimonial {
+  padding: var(--spacing-xl) var(--spacing-lg);
   text-align: center;
 }
 
@@ -178,8 +183,8 @@
 }
 
 .testimonial-card-photo {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   border-radius: var(--border-radius-full);
   margin-right: var(--spacing-sm);
   object-fit: cover;
@@ -273,6 +278,7 @@
 
 /* CTA Section */
 .cta {
+  padding: var(--spacing-xl) var(--spacing-lg);
   text-align: center;
 }
 
@@ -298,6 +304,7 @@
   background-color: var(--color-sand-light);
   border-radius: var(--border-radius-md);
   box-shadow: var(--box-shadow-default);
+  padding: var(--spacing-lg);
   margin-bottom: var(--spacing-xl);
   display: flex;
   flex-wrap: wrap;
@@ -344,6 +351,7 @@
 /* Guarantee Section */
 .guarantee {
   background-color: var(--color-sand);
+  padding: var(--spacing-xl) var(--spacing-lg);
   text-align: center;
 }
 
@@ -351,6 +359,7 @@
   background-color: var(--color-sand-light);
   border-radius: var(--border-radius-md);
   box-shadow: var(--box-shadow-default);
+  padding: var(--spacing-lg);
 }
 
 .guarantee-title {
