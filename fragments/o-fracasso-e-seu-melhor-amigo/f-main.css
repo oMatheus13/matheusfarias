@@ -116,7 +116,6 @@
 
 .features-list {
   list-style-type: decimal;
-  padding-left: var(--spacing-xl);
   margin-bottom: var(--spacing-lg);
 }
 
@@ -325,12 +324,12 @@
 .cta-pricecard-discount {
   color: var(--color-stonegray);
   font-size: var(--font-size-base);
-  text-decoration: line-through;
 }
 
 .cta-pricecard-total {
   color: var(--color-stonegray);
   font-size: var(--font-size-base);
+  text-decoration: line-through;
 }
 
 .cta-card-two {
