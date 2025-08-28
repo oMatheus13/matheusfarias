@@ -24,21 +24,21 @@ module.exports = (req, res) => {
       return sendFileContent(filePath);
     }
   } else {
-    // Check if the requested path exists as a file in 'pages' directory
-    filePath = path.join(process.cwd(), 'pages', `${requestedPath}.html`);
+    // Check if the requested path exists as a file in 'site/pages' directory
+    filePath = path.join(process.cwd(), 'site', 'pages', `${requestedPath}.html`);
     if (fs.existsSync(filePath)) {
       return sendFileContent(filePath);
     }
 
-    // Check if the requested path exists as a file in 'fragments' directory
-    filePath = path.join(process.cwd(), 'fragments', requestedPath, 'index.html');
+    // Check if the requested path exists as a file in 'site/fragments' directory
+    filePath = path.join(process.cwd(), 'site', 'fragments', requestedPath, 'index.html');
     if (fs.existsSync(filePath)) {
       return sendFileContent(filePath);
     }
   }
 
   // If no file is found, return the custom 404 page
-  const notFoundPath = path.join(process.cwd(), 'pages', '404.html');
+  const notFoundPath = path.join(process.cwd(), 'site', 'pages', '404.html');
   if (fs.existsSync(notFoundPath)) {
     return sendFileContent(notFoundPath);
   }
