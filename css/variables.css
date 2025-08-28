@@ -30,6 +30,7 @@
 
     /* Tipografia */
     --font-family-primary: 'Melodrama';
+    --font-family-primary-variable: 'Melodrama-Variable';
     --font-family-secondary: 'Work Sans';
 
     --font-weight-thin: 100;
