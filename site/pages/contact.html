@@ -83,15 +83,15 @@
     </script>
 
     <!-- Links para CSS -->
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/css/variables.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/components/logo.css" />
-    <link rel="stylesheet" href="/css/components/header.css" />
-    <link rel="stylesheet" href="/css/components/footer.css" />
-    <link rel="stylesheet" href="/css/components/faq.css" />
-    <link rel="stylesheet" href="/css/pages/contact.css" />
+    <link rel="stylesheet" href="../static/css/reset.css" />
+    <link rel="stylesheet" href="../static/css/fonts.css" />
+    <link rel="stylesheet" href="../static/css/variables.css" />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/components/logo.css" />
+    <link rel="stylesheet" href="../static/css/components/header.css" />
+    <link rel="stylesheet" href="../static/css/components/footer.css" />
+    <link rel="stylesheet" href="../static/css/components/faq.css" />
+    <link rel="stylesheet" href="../static/css/pages/contact.css" />
   </head>
 
   <body>
@@ -115,7 +115,7 @@
       <section class="contact__methods">
         <h2 class="contact__methods-title">Entre em contato</h2>
         <ul class="contact__methods-list">
-          <!-- social-media: email 
+          <!-- social-media: email-->
           <li class="contact__methods-item">
             <span class="contact__methods-icon">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
@@ -125,7 +125,7 @@
               </svg>
             </span>
             <a href="mailto:contato@omatheus.com" class="contact__methods-link">contato@omatheus.com</a>
-          </li>-->
+          </li>
 
           <!-- social-media: instagram -->
           <li class="contact__methods-item">
@@ -243,7 +243,7 @@
 
       <section class="faq">
         <h2 class="faq__title">FAQ</h2>
-        
+
         <div class="faq__item">
           <button class="faq__question">Você aceita projetos de design?</button>
           <div class="faq__answer">
@@ -314,9 +314,9 @@
         }
       }
       // Executa o load do header e footer
-      loadComponent("header-placeholder", "/includes/header.html");
-      loadComponent("footer-placeholder", "/includes/footer.html");
+      loadComponent("header-placeholder", "../includes/header.html");
+      loadComponent("footer-placeholder", "../includes/footer.html");
     </script>
-    <script src="/js/components/faq.js" defer></script>
+    <script src="../static/js/components/faq.js" defer></script>
   </body>
 </html>
