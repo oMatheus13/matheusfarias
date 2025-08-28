@@ -1,84 +1,103 @@
-/**
-* @license
-*
-* Font Family: Melodrama
-* Designed by: Shaily Patel
-* URL: https://www.fontshare.com/fonts/melodrama
-* © 2025 Indian Type Foundry
-*
-* Melodrama Light
-* Melodrama Regular
-* Melodrama Medium
-* Melodrama Semibold
-* Melodrama Bold
-* Melodrama Variable (Variable font)
-
-*
-*/
+/* Griff */
 @font-face {
-  font-family: 'Melodrama';
-  src: url('assets/fonts/melodrama/Melodrama-Light.woff2') format('woff2'),
-       url('assets/fonts/melodrama/Melodrama-Light.woff') format('woff'),
-       url('assets/fonts/melodrama/Melodrama-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Melodrama';
-  src: url('assets/fonts/melodrama/Melodrama-Regular.woff2') format('woff2'),
-       url('assets/fonts/melodrama/Melodrama-Regular.woff') format('woff'),
-       url('assets/fonts/melodrama/Melodrama-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Melodrama';
-  src: url('assets/fonts/melodrama/Melodrama-Medium.woff2') format('woff2'),
-       url('assets/fonts/melodrama/Melodrama-Medium.woff') format('woff'),
-       url('assets/fonts/melodrama/Melodrama-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Melodrama';
-  src: url('assets/fonts/melodrama/Melodrama-Semibold.woff2') format('woff2'),
-       url('assets/fonts/melodrama/Melodrama-Semibold.woff') format('woff'),
-       url('assets/fonts/melodrama/Melodrama-Semibold.ttf') format('truetype');
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Melodrama';
-  src: url('assets/fonts/melodrama/Melodrama-Bold.woff2') format('woff2'),
-       url('assets/fonts/melodrama/Melodrama-Bold.woff') format('woff'),
-       url('assets/fonts/melodrama/Melodrama-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-/**
-* This is a variable font
-* You can control variable axes as shown below:
-* font-variation-settings: wght 300.0;
-*
-* available axes:
-'wght' (range from 300.0 to 700.0
-*/
-@font-face {
-  font-family: 'Melodrama-Variable';
-  src: url('assets/fonts/melodrama/Melodrama-Variable.woff2') format('woff2'),
-       url('assets/fonts/melodrama/Melodrama-Variable.woff') format('woff'),
-       url('assets/fonts/melodrama/Melodrama-Variable.ttf') format('truetype');
-  font-weight: 300 700;
-  font-display: swap;
-  font-style: normal;
+    font-family: 'Griff';
+    src: url('/assets/fonts/griff/Griff-Light.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Light.woff') format('woff'),
+        url('/assets/fonts/griff/Griff-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: 'Griff';
+    src: url('/assets/fonts/griff/Griff-LightItalic.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-LightItalic.woff') format('woff'),
+        url('/assets/fonts/griff/Griff-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Griff';
+    src: url('/assets/fonts/griff/Griff-Regular.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Regular.woff') format('woff'),
+        url('/assets/fonts/griff/Griff-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Griff';
+    src: url('/assets/fonts/griff/Griff-Italic.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Italic.woff') format('woff'),
+        url('/assets/fonts/griff/Griff-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Griff';
+    src: url('/assets/fonts/griff/Griff-Medium.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Medium.woff') format('woff'),
+        url('/assets/fonts/griff/Griff-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Griff';
+    src: url('/assets/fonts/griff/Griff-MediumItalic.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-MediumItalic.woff') format('woff'),
+        url('/assets/fonts/griff/Griff-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Griff';
+    src: url('/assets/fonts/griff/Griff-Semibold.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Semibold.woff') format('woff'),
+        url('/assets/fonts/griff/Griff-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Griff';
+    src: url('/assets/fonts/griff/Griff-SemiboldItalic.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-SemiboldItalic.woff') format('woff'),
+        url('/assets/fonts/griff/Griff-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Griff';
+    src: url('/assets/fonts/griff/Griff-Bold.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-Bold.woff') format('woff'),
+        url('/assets/fonts/griff/Griff-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Griff';
+    src: url('/assets/fonts/griff/Griff-BoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/griff/Griff-BoldItalic.woff') format('woff'),
+        url('/assets/fonts/griff/Griff-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
 
 
 /* Work Sans */

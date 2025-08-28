@@ -1,5 +1,5 @@
-@import url("variables.css");
-@import url("fonts.css");
+@import url("variable.css");
+@import url("font.css");
 
 body {
   -webkit-tap-highlight-color: transparent;
