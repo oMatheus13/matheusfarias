@@ -83,14 +83,14 @@
     </script>
 
     <!-- Links para CSS -->
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/css/variables.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/components/logo.css" />
-    <link rel="stylesheet" href="/css/components/header.css" />
-    <link rel="stylesheet" href="/css/components/footer.css" />
-    <link rel="stylesheet" href="/css/pages/home.css" />
+    <link rel="stylesheet" href="site/static/css/reset.css" />
+    <link rel="stylesheet" href="site/static/css/fonts.css" />
+    <link rel="stylesheet" href="site/static/css/variables.css" />
+    <link rel="stylesheet" href="site/static/css/main.css" />
+    <link rel="stylesheet" href="site/static/css/components/logo.css" />
+    <link rel="stylesheet" href="site/static/css/components/header.css" />
+    <link rel="stylesheet" href="site/static/css/components/footer.css" />
+    <link rel="stylesheet" href="site/static/css/pages/home.css" />
   </head>
 
   <body>
@@ -212,11 +212,11 @@
       }
 
       // Executa o load do header e footer
-      loadComponent("header-placeholder", "/includes/header.html");
-      loadComponent("footer-placeholder", "/includes/footer.html");
+      loadComponent("header-placeholder", "site/includes/header");
+      loadComponent("footer-placeholder", "site/includes/footer");
     </script>
 
-    <script src="/js/main.js" defer></script>
+    <script src="site/static/js/main.js" defer></script>
   </body>
 </html>
 
