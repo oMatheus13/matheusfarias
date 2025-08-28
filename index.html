@@ -113,7 +113,7 @@
             <li class="cier__item"><strong>R —</strong> O fracasso é seu melhor amigo.</li>
           </ul>
 
-          <a href="site/pages/cier" class="cier__cta">Ver Método Completo</a>
+          <a href="/cier" class="cier__cta">Ver Método Completo</a>
         </div>
       </section>
 
@@ -131,7 +131,7 @@
             Aqui você vai encontrar minha jornada, minha história, meus projetos, meu livro e tudo que faz parte do meu
             caminho como criador e ser humano.
           </p>
-          <a href="site/pages/about" class="about__cta">Conhecer Minha História</a>
+          <a href="/about" class="about__cta">Conhecer Minha História</a>
         </div>
       </section>
 
@@ -144,7 +144,7 @@
             Receba um plano de ação em vídeo, 100% personalizado, e saia da
             paralisia com o Diagnóstico de Destravamento CIER.
           </p>
-          <a href="site/pages/diagnostic" class="diagnostic-home__cta">
+          <a href="/diagnostic" class="diagnostic-home__cta">
             Obter Diagnóstico Personalizado
           </a>
         </div>
@@ -161,7 +161,7 @@
             Hoje, meu foco principal é minha marca pessoal, minha jornada como criador e escritor. Este portfólio não é
             uma vitrine de serviços, mas sim um registro do meu caminho criativo.
           </p>
-          <a href="site/pages/fragments" class="fragments__cta">Ver Todos os Fragmentos</a>
+          <a href="/fragments" class="fragments__cta">Ver Todos os Fragmentos</a>
         </div>
       </section>
 
@@ -169,7 +169,7 @@
         <div class="contact__container">
           <h2 class="contact__title">Conecte-se</h2>
           <p class="contact__text">Quer conversar? Me manda uma ideia, proposta ou só diz oi.</p>
-          <a href="site/pages/contact" class="contact__cta">Detalhes de Contato</a>
+          <a href="/contact" class="contact__cta">Detalhes de Contato</a>
         </div>
       </section>
     </main>
@@ -182,7 +182,7 @@
       function loadComponent(placeholderId, filePath) {
         const placeholder = document.getElementById(placeholderId);
         if (placeholder) {
-          fetch(filePath)
+          fetch(`/api/router?path=${filePath}`)
             .then((res) => {
               if (!res.ok) {
                 throw new Error(`HTTP error! status: ${res.status}`);
@@ -212,10 +212,11 @@
       }
 
       // Executa o load do header e footer
-      loadComponent("header-placeholder", "site/includes/header.html");
-      loadComponent("footer-placeholder", "site/includes/footer.html");
+      loadComponent("header-placeholder", "site/includes/header");
+      loadComponent("footer-placeholder", "site/includes/footer");
     </script>
 
     <script src="site/static/js/main.js" defer></script>
   </body>
 </html>
+
